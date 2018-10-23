@@ -1,171 +1,38 @@
-
-/* h1 {
-  color: black;
-  margin: auto;
-} */
-/* ul li {
-  color: gray;
-  display: inline;
-  margin-right: 20px;
-  font-size: 1.2em
-  position: relative;
-} */
-
-.header {
-  overflow: hidden;
-  background-color: #f1f1f1;
-  padding: 20px 10px;
-}
-.header a {
-  float: left;
-  color: black;
-  text-align: center;
-  padding: 12px;
-  text-decoration: none;
-  font-size: 18px;
-  line-height: 25px;
-  border-radius: 4px;
-}
-.header a.logo {
-  font-size: 40px;
-  font-weight: bold;
-}
-.header a.active {
-  background-color: dodgerblue;
-  color: white;
-}
-.header-right {
-  float: right;
-}
-@media screen and (max-width: 500px) {
-  .header a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-  .header-right {
-    float: none;
-  }
-  #oldmain {
-    height: auto;
-    width:auto;
-  }
-  #studypic {
-    height: auto;
-    width: auto;
-  }
- #researchpic {
-   height: auto;
-   width:auto;
- }
- .column {
-  width: 100%;
-}
-}
-#oldmain {
-  position: relative;
-  height: 100%;
-  width: 100%;
-  margin:auto;
-   }
- #image_container {
-   width: 80%;
-   height: 80%;
-   position: absolute;
-  margin:auto;
-  top:0;
-  bottom:0;
-  left:0;
-  right:0;
-  background-color: white;
-  position: relative;
-  /* text-align: left; */
-  padding-top: 25px;
-}
-
-#maintext {
-  position: absolute;
-  /* top: 20px; */
-  /* right: 15px; */
-  top: 90px;
-  left: 60px;
-  font-size: 2em;
-  font-style: oblique;
-  color: white; text-shadow: black 1.5em 1.5em 2em
-  z-index: 10;
-
-}
-#subtext{
-  position: absolute;
-  /* top: 20px; */
-  /* right: 15px; */
-  bottom: 90px;
-  right: 60px;
-  font-size: 1.2em;
-  font-style: oblique;
-  color: white; text-shadow: black 1.5em 1.5em 2em
-  z-index: 10;
-}
-* {
-  box-sizing: border-box;
-}
-.column {
-  float:left;
-  width: 50%
-  padding: 10px;
-  margin: 20px;
-  top:0;
-  bottom:0;
-  left:0;
-  right:0;
-  background-color: white;
-  position: relative;
-}
-.researchcolumn {
-  float:right;
-  width: 50%
-  padding: 10px;
-  margin: 20px;
-  top:0;
-  bottom:0;
-  left:0;
-  right:0;
-  background-color: white;
-  position: relative;
-}
-/*.row {
-  display: inline;
-  content: " ";
-  clear: both;
-}/*
-/*#studyresearch{
- width: 80%;
- height: 80%;
- position: absolute;
- margin:auto;
- top:0;
- bottom:0;
- left:0;
- right:0;
- background-color: white;
- position: relative;
- padding-top: 25px;
- position: inline;
-}
-#studypic {
-  position: inline;
-  height: 50%;
-  width: 50%;
-  margin:auto;
-  float:left;
-  margin: 5px;
-  padding:5px;
-}
-#researchpic {
-position: inline;
-height: 50%;
-width: 50%;
-margin: 5px;
-padding: 5px
-float: right;
-}
+<html lang= "en">
+   <head>
+     <title> My University Webpage </title>
+     <link rel= "stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div id="parent">
+      <div class="header">
+  <a href="#default" class="logo">Penn State University</a>
+  <div class="header-right">
+    <a class="active" href="#home">About</a>
+    <a href="#news">News</a>
+    <a href="#study">Study</a>
+    <a href= "#research">Research</a>
+  </div>
+</div>
+   <div id="image_container">
+      <img id="oldmain"
+           src="css/old_main.jpg"
+          alt="Old Main"
+          title= "A picture of Old Main at Penn State University"/>
+    <div id="maintext">Penn State Lives Here</div>
+    <div id="subtext">Teaching students to be leaders since 1855</div>
+  </div>
+ <div class="row">
+   <div class="column">
+     <img src="css/study.jpg"
+     alt="Scholars at Penn State maintain high marks"
+     title="Penn State scholars"
+     style="width:50%; float:left"/>
+   </div>
+    <div class="researchcolumn">
+     <img src="css/chris.jpg"
+     alt="Penn State serves as a top research institute"
+     title="Penn State students and professors complete leading research"
+     style="width:50%; float:right"/>
+</div>
+  </body>
