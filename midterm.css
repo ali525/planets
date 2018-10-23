@@ -1,5 +1,4 @@
 
-
 /* h1 {
   color: black;
   margin: auto;
@@ -54,13 +53,22 @@
   #studypic {
     height: auto;
     width: auto;
+    float: left;
+    display block;
   }
  #researchpic {
    height: auto;
    width:auto;
+   float: right;
+   display: block;
  }
  .column {
   width: 100%;
+}
+#studentquote {
+ padding: 20px 10px;
+ display:block;
+ margin-top: 40px;
 }
 }
 #oldmain {
@@ -111,14 +119,13 @@
   box-sizing: border-box;
 }
 .column {
+  overflow: hidden;
   display: block;
-  margin: 0px;
-  padding: 0px;
-  position: relative;
-  top: 90px;
+  margin: 20px;
+  padding: 20px;
+  top: 35px;
   height: auto;
   max-width: auto;
-  overflow-y: hidden;
   overflow-x:auto;
 }
 
@@ -126,6 +133,7 @@
   display: inline;
   content: " ";
   clear: both;
+  overflow: hidden;
 }
 /*#studyresearch{
  width: 80%;
@@ -142,19 +150,70 @@
  position: inline;
 }*/
 #studypic {
+  overflow: hidden;
   position: inline;
   height: 50%;
   width: 50%;
   margin:auto;
   float:left;
   margin: 5px;
-  padding:5px;
+  padding-left: :5px;
+  padding-right: 5px;
+  margin-left: 5px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
 }
 #researchpic {
+overflow: hidden;
 position: inline;
-height: 30%;
+box-sizing: border-box;
+height: 50%;
 width: 50%;
 margin: 5px;
-padding: 5px
+padding: 5px;
+padding-left: 5px;
+padding-right: 5px;
+margin-left: 5px
 float: right;
+object-fit: scale-down;
+margin-bottom: 15px;
+}
+/* #studentquote{
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}/*
+*/
+#studentquote {
+  overflow: hidden;
+  margin: 25px;
+  padding: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
+  top: 20px;
+  background-color: #f1f1f1;
+  height: 40%;
+  width: 100%;
+  word-break: break-all;
+  box-sizing: border-box;
+}
+h1 {
+  font-size: 1.8em;
+  font-style: oblique;
+}
+p {
+  font-size: 1.3em
+  word-break:break-all;
+  float: right;
+}
+#peter {
+  box-sizing: border-box;
+  padding-right: 5px;
+  padding-left: 5px;
+  position: relative;
 }
