@@ -1,4 +1,5 @@
 
+
 /* h1 {
   color: black;
   margin: auto;
@@ -110,34 +111,22 @@
   box-sizing: border-box;
 }
 .column {
-  float:left;
-  width: 50%
-  padding: 10px;
-  margin: 20px;
-  top:0;
-  bottom:0;
-  left:0;
-  right:0;
-  background-color: white;
+  display: block;
+  margin: 0px;
+  padding: 0px;
   position: relative;
+  top: 90px;
+  height: auto;
+  max-width: auto;
+  overflow-y: hidden;
+  overflow-x:auto;
 }
-.researchcolumn {
-  float:right;
-  width: 50%
-  padding: 10px;
-  margin: 20px;
-  top:0;
-  bottom:0;
-  left:0;
-  right:0;
-  background-color: white;
-  position: relative;
-}
-/*.row {
+
+.row {
   display: inline;
   content: " ";
   clear: both;
-}/*
+}
 /*#studyresearch{
  width: 80%;
  height: 80%;
@@ -151,7 +140,7 @@
  position: relative;
  padding-top: 25px;
  position: inline;
-}
+}*/
 #studypic {
   position: inline;
   height: 50%;
@@ -163,7 +152,7 @@
 }
 #researchpic {
 position: inline;
-height: 50%;
+height: 30%;
 width: 50%;
 margin: 5px;
 padding: 5px
