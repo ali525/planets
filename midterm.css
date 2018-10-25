@@ -1,5 +1,4 @@
 
-
 /* h1 {
   color: black;
   margin: auto;
@@ -353,6 +352,14 @@ span {
   padding: 2px;
   display: table-cell;
 }
+.studybodypic {
+  style= "float: left;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  border: solid black 1px;
+  padding: 2px;
+  display: table-cell;
+}
 .researchbody1 {
   position: relative;
   display: table;
@@ -365,11 +372,13 @@ span {
 .researchbody1 p {
   font-size: 1.4em
 }
+.researchbody1 h2 {
+  font-size: 2em;
+}
 .researchbody2 {
   position: inherit;
   display: table;
   background-color: #f1f1f1
-  margin-top: 20px;
   padding: 15px;
   border-width: .5em;
   border: solid black;
@@ -384,14 +393,58 @@ span {
   position: inherit;
   display: table;
   background-color: #f1f1f1
-  margin-top: 20px;
   padding: 15px;
   border-width: .5em;
   border: solid black;
+  margin-bottom: 20px;
 }
 .researchbody3 p {
   font-size: 1.4em;
 }
 .researchbody3 h4 {
+  font-size: 2em;
+}
+.studybody1 {
+  position: relative;
+  display: table;
+  background-color: #f1f1f1
+  margin: 20px;
+  padding: 15px;
+  border-width: .5em;
+  border: solid black;
+}
+.studybody1 p {
+  font-size: 1.4em
+}
+.studybody1 h2 {
+  font-size: 2em;
+}
+.studybody2 {
+  position: inherit;
+  display: table;
+  background-color: #f1f1f1
+  padding: 15px;
+  border-width: .5em;
+  border: solid black;
+}
+.studybody2 p {
+  font-size: 1.4em;
+}
+.studybody2 h3 {
+  font-size: 2em;
+}
+.studybody3 {
+  position: inherit;
+  display: table;
+  background-color: #f1f1f1
+  padding: 15px;
+  border-width: .5em;
+  border: solid black;
+  margin-bottom: 20px;
+}
+.studybody3 p {
+  font-size: 1.4em;
+}
+.studybody3 h4 {
   font-size: 2em;
 }
