@@ -1,0 +1,68 @@
+<html lang= "en">
+   <head>
+     <title> My University Webpage </title>
+     <link rel= "stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div id="parent">
+      <div class="header">
+  <a href="#default" class="logo">PontyBridge University</a>
+  <div class="header-right">
+    <a href="webpage_home.html">About</a>
+    <a href="#news">News</a>
+    <a class="active" href="webpage_study.html">Study</a>
+    <a href= "webpage_research.html">Research</a>
+  </div>
+</div>
+
+<h1>Study</h1>
+
+<div class="studybody1">
+  <h2>Course 101</h2>
+   <img class="studybodypic"
+     src="css/study.jpg"
+     width="240";
+     height:"240";
+     alt="Scholars";
+     title="PBU scholars become future leaders";
+     style="float: left"/>
+  <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dignissim sapien lorem, ac sagittis mauris dignissim sed. Duis hendrerit sapien est, eu lobortis odio aliquam in. </p>
+</div>
+
+<div class="studybody2">
+  <h3>Course 102</h3>
+  <img class="studybodypic"
+  src="css/study.jpg"
+  width="240";
+  height="240";
+  alt="PBU scholars";
+  title="Students are the future"
+  style="float: right"/>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dignissim sapien lorem, ac sagittis mauris dignissim sed. Duis hendrerit sapien est, eu lobortis odio aliquam in. </p>
+</div>
+
+<div class="studybody3">
+  <h4>Course 201</h4>
+   <img class="studybodypic"
+     src="css/study.jpg"
+     width="240";
+     height:"240";
+     alt="Scholars enjoy time here";
+     title="Students are scholars";
+     style="float: left"/>
+  <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dignissim sapien lorem, ac sagittis mauris dignissim sed. Duis hendrerit sapien est, eu lobortis odio aliquam in. </p>
+</div>
+
+
+<div class="footer">
+<a href="#default" class="logo">PontyBridge University</a>
+<div class="footer-left">
+ <a href="webpage_home.html">About</a>
+ <a href="#news">News</a>
+<a class="active" href="webpage_study.html">Study</a>
+<a href= "webpage_research.html">Research</a>
+</div>
+
+
+</div>
+</body>
