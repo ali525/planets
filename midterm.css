@@ -1,4 +1,5 @@
 
+
 /* h1 {
   color: black;
   margin: auto;
@@ -118,7 +119,36 @@
 * {
   box-sizing: border-box;
 }
-.column {
+
+/*.img-frame{
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 30px;
+}/*
+/*
+.studypic {
+  float: left;
+  display: inline-block;
+  margin:15px;
+  background:transparent;
+  padding:8px;
+  border:.5em solid #999999;
+}*/
+.caption {
+  text-align:center;
+  margin-top:4px;
+  font-size: 1.8em;
+}
+/*
+.researchpic{
+  float: right;
+  display:inline-block;
+  margin: 15px;
+  background:transparent;
+  padding:8px;
+  border:.5em solid #999999;}
+/*.column {
   overflow: hidden;
   display: block;
   margin: 20px;
@@ -127,13 +157,15 @@
   height: auto;
   max-width: auto;
   overflow-x:auto;
-}
+}*/
 
 .row {
-  display: inline;
-  content: " ";
-  clear: both;
-  overflow: hidden;
+  display: flex;
+  margin-top: 20px;
+}
+.column {
+  flex: 50%;
+  padding-left: 5px;
 }
 /*#studyresearch{
  width: 80%;
@@ -149,7 +181,7 @@
  padding-top: 25px;
  position: inline;
 }*/
-#studypic {
+/*#studypic {
   overflow: hidden;
   position: inline;
   height: 50%;
@@ -177,7 +209,7 @@ margin-left: 5px
 float: right;
 object-fit: scale-down;
 margin-bottom: 15px;
-}
+}/*
 /* #studentquote{
   float: left;
   color: black;
@@ -210,9 +242,10 @@ p {
   font-size: 1.3em
   word-break:break-all;
   float: right;
+  word-wrap:
 }
 #peter {
-  box-sizing: border-box;
+  align: right;
   padding-right: 5px;
   padding-left: 5px;
   position: relative;
