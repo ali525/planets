@@ -316,7 +316,7 @@ p {
   word-break:break-all;
   float: right;
   word-wrap:
-}/*
+} /*
 */#peter {
   vertical-align: middle;
   display: table-cell;
@@ -337,4 +337,61 @@ span {
   vertical-align: middle;
   display: table-cell;
   padding-right: 60px;
+}
+.researchpageinfo {
+  display: table;
+  background-color: #f1f1f1
+  font-size: 1.5em
+  font-style:normal;
+  margin: 20px;
+}
+.researchbodypic {
+  style= "float: left;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  border: solid black 1px;
+  padding: 2px;
+  display: table-cell;
+}
+.researchbody1 {
+  position: relative;
+  display: table;
+  background-color: #f1f1f1
+  margin: 20px;
+  padding: 15px;
+  border-width: .5em;
+  border: solid black;
+}
+.researchbody1 p {
+  font-size: 1.4em
+}
+.researchbody2 {
+  position: inherit;
+  display: table;
+  background-color: #f1f1f1
+  margin-top: 20px;
+  padding: 15px;
+  border-width: .5em;
+  border: solid black;
+}
+.researchbody2 p {
+  font-size: 1.4em;
+}
+.researchbody2 h3 {
+  font-size: 2em;
+}
+.researchbody3 {
+  position: inherit;
+  display: table;
+  background-color: #f1f1f1
+  margin-top: 20px;
+  padding: 15px;
+  border-width: .5em;
+  border: solid black;
+}
+.researchbody3 p {
+  font-size: 1.4em;
+}
+.researchbody3 h4 {
+  font-size: 2em;
 }
