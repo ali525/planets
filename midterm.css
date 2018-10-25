@@ -1,5 +1,4 @@
 
-
 /* h1 {
   color: black;
   margin: auto;
@@ -66,6 +65,12 @@
  .column {
   width: 100%;
 }
+.news {
+  width: 100%;
+}
+p2 {
+  position: fixed;
+}
 #studentquote {
  padding: 20px 10px;
  display:block;
@@ -116,6 +121,27 @@
   color: white; text-shadow: black 1.5em 1.5em 2em
   z-index: 10;
 }
+.newssub {
+  position: fixed;
+  font-size: 1em;
+  bottom:200px;
+  margin-left: 15px;
+}
+.newssub_bottom {
+  position: fixed;
+  font-size: 1em;
+  bottom: 180px;
+  margin-left: 15px;
+}
+p2{
+  position:relative;
+  text-align: left;
+  font-size: 1em;
+  bottom: 200px;
+  margin-left: 50px;
+  word-break: break-all;
+  word-wrap: break-word;
+}
 * {
   box-sizing: border-box;
 }
@@ -139,6 +165,12 @@
   text-align:center;
   margin-top:4px;
   font-size: 1.8em;
+}
+.news_caption {
+  text-align: center;
+  margin-top: 4px;
+  font-size: 1.5em;
+  word-break: break-all;
 }
 /*
 .researchpic{
@@ -165,6 +197,14 @@
 }
 .column {
   flex: 50%;
+  padding-left: 5px;
+}
+.news {
+  display: flex;
+  margin-top: 20px;
+}
+.notes {
+  flex: 33.333%;
   padding-left: 5px;
 }
 /*#studyresearch{
