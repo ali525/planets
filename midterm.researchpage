@@ -10,7 +10,7 @@
   <div class="header-right">
     <a href="webpage_home.html">About</a>
     <a href="#news">News</a>
-    <a href="#study">Study</a>
+    <a href="webpage_study.html">Study</a>
     <a class="active" href= "#research">Research</a>
   </div>
 </div>
@@ -59,7 +59,7 @@
 <div class="footer-left">
  <a href="webpage_home.html">About</a>
  <a href="#news">News</a>
-<a href="#study">Study</a>
+<a href="webpage_study.html">Study</a>
 <a class="active" href= "webpage_research.html">Research</a>
 </div>
 
