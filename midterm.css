@@ -102,8 +102,8 @@
 .news {
   width: 100%;
 }
-p2 {
-  position: fixed;
+.notes p2 {
+  font-size: 1em;
 }
 #studentquote {
  padding: 20px 10px;
@@ -140,7 +140,7 @@ p2 {
   left: 60px;
   font-size: 2em;
   font-style: oblique;
-  color: white; text-shadow: black 1.5em 1.5em 2em
+  color: white; text-shadow: black, 1.5em, 1.5em, 2em;
   z-index: 10;
 
 }
@@ -167,7 +167,7 @@ p2 {
   bottom: 180px;
   margin-left: 15px;
 }
-p2{
+.notes p2{
   position:relative;
   text-align: left;
   font-size: 1em;
@@ -360,11 +360,12 @@ span {
   padding: 2px;
   display: table-cell;
 }
+.researchbodytotal {
+  display:block;
+}
 .researchbody1 {
-  position: relative;
   display: table;
-  background-color: #f1f1f1
-  margin: 20px;
+  background-color: #f1f1f1;
   padding: 15px;
   border-width: .5em;
   border: solid black;
@@ -376,12 +377,12 @@ span {
   font-size: 2em;
 }
 .researchbody2 {
-  position: inherit;
   display: table;
-  background-color: #f1f1f1
+  background-color: #f1f1f1;
   padding: 15px;
   border-width: .5em;
   border: solid black;
+  margin-top: 15px;
 }
 .researchbody2 p {
   font-size: 1.4em;
@@ -390,13 +391,13 @@ span {
   font-size: 2em;
 }
 .researchbody3 {
-  position: inherit;
   display: table;
-  background-color: #f1f1f1
+  background-color: #f1f1f1;
   padding: 15px;
   border-width: .5em;
   border: solid black;
   margin-bottom: 20px;
+  margin-top: 15px;
 }
 .researchbody3 p {
   font-size: 1.4em;
@@ -407,8 +408,7 @@ span {
 .studybody1 {
   position: relative;
   display: table;
-  background-color: #f1f1f1
-  margin: 20px;
+  background-color: #f1f1f1;
   padding: 15px;
   border-width: .5em;
   border: solid black;
@@ -422,10 +422,11 @@ span {
 .studybody2 {
   position: inherit;
   display: table;
-  background-color: #f1f1f1
+  background-color: #f1f1f1;
   padding: 15px;
   border-width: .5em;
   border: solid black;
+  margin-top: 15px;
 }
 .studybody2 p {
   font-size: 1.4em;
@@ -436,8 +437,9 @@ span {
 .studybody3 {
   position: inherit;
   display: table;
-  background-color: #f1f1f1
+  background-color: #f1f1f1;
   padding: 15px;
+  margin-top: 15px;
   border-width: .5em;
   border: solid black;
   margin-bottom: 20px;
