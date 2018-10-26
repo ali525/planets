@@ -17,6 +17,7 @@
 
 <h1>Research</h1>
 
+<div class="researchbodytotal">
 <div class="researchbody1">
   <h2>Project One</h2>
    <img class="researchbodypic"
@@ -52,7 +53,7 @@
      style="float: left"/>
   <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dignissim sapien lorem, ac sagittis mauris dignissim sed. Duis hendrerit sapien est, eu lobortis odio aliquam in. </p>
 </div>
-
+</div>
 
 <div class="footer">
 <a href="#default" class="logo">PontyBridge University</a>
