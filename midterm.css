@@ -13,12 +13,12 @@
 
 .header {
   overflow: hidden;
-  background-color: #f1f1f1;
+  background-color: #A993ff;
   padding: 20px 10px;
 }
 .footer{
   overflow: hidden;
-  background-color: #f1f1f1;
+  background-color: #A993FF;
   padding: 20px 10px;
 }
 .footer a {
@@ -29,7 +29,8 @@
   text-decoration: none;
   font-size: 18px;
   line-height: 25px;
-  border-radius: 4px
+  border-radius: 4px;
+  font-family: 'Quattrocento', serif;
 }
 .header a {
   float: left;
@@ -40,28 +41,35 @@
   font-size: 18px;
   line-height: 25px;
   border-radius: 4px;
+  font-family: 'Quattrocento', serif;
 }
 .header a.logo {
   font-size: 40px;
   font-weight: bold;
+  font-family: 'Quattrocento', serif;
 }
 .footer a.logo {
   font-size: 40px;
   font-weight: bold;
+  font-family: 'Quattrocento', serif;
 }
 .header a.active {
-  background-color: dodgerblue;
+  background-color: #9A55B2;
   color: white;
+  font-family: 'Quattrocento', serif;
 }
 .footer a.active {
-  background-color: dodgerblue;
+  background-color: #9A55B2;
   color: white;
+  font-family: 'Quattrocento', serif;
 }
 .header-right {
   float: right;
+  font-family:'Quattrocento Sans', sans-serif;
 }
 .footer-left {
   float: left;
+  font-family: 'Quattrocento Sans', sans-serif;
 }
 @media screen and (max-width: 500px) {
   .header a {
@@ -109,6 +117,7 @@
  padding: 20px 10px;
  display:block;
  margin-top: 40px;
+ font-family: 'Quattrocento Sans', sans-serif;
 }
 }
 #oldmain {
@@ -140,9 +149,9 @@
   left: 60px;
   font-size: 2em;
   font-style: oblique;
-  color: white; text-shadow: black, 1.5em, 1.5em, 2em;
+  color: white;
+  text-shadow: black, 1.5em, 1.5em, 2em;
   z-index: 10;
-
 }
 #subtext{
   position: absolute;
@@ -175,6 +184,7 @@
   margin-left: 50px;
   word-break: break-all;
   word-wrap: break-word;
+  font-family: 'Quattrocento Sans', sans-serif;
 }
 * {
   box-sizing: border-box;
@@ -199,12 +209,14 @@
   text-align:center;
   margin-top:4px;
   font-size: 1.8em;
+  font-family: 'Quattrocento Sans', sans-serif;
 }
 .news_caption {
   text-align: center;
   margin-top: 4px;
   font-size: 1.5em;
   word-break: break-all;
+  font-family: 'Quattrocento Sans', sans-serif;
 }
 /*
 .researchpic{
@@ -228,10 +240,12 @@
 .row {
   display: flex;
   margin-top: 20px;
+  font-family: 'Quattrocento Sans', sans-serif;
 }
 .column {
   flex: 50%;
   padding-left: 5px;
+  font-family: 'Quattrocento Sans', sans-serif;
 }
 .news {
   display: flex;
@@ -328,9 +342,10 @@ p {
 }
 #studentquote {
   display:table;
-  background-color: #f1f1f1;
+  background-color: #A993FF;
   font-size: 1.3em;
   font-style: oblique;
+  font-family: 'Quattrocento Sans', sans-serif;
 }
 span {
   vertical-align: middle;
@@ -339,7 +354,7 @@ span {
 }
 .researchpageinfo {
   display: table;
-  background-color: #f1f1f1
+  background-color: #A993FF;
   font-size: 1.5em
   font-style:normal;
   margin: 20px;
@@ -365,20 +380,22 @@ span {
 }
 .researchbody1 {
   display: table;
-  background-color: #f1f1f1;
+  background-color: #A993FF;
   padding: 15px;
   border-width: .5em;
   border: solid black;
 }
 .researchbody1 p {
-  font-size: 1.4em
+  font-size: 1.4em;
+  font-family: 'Quattrocento Sans', sans-serif;
 }
 .researchbody1 h2 {
   font-size: 2em;
+font-family: 'Quattrocento', serif;
 }
 .researchbody2 {
   display: table;
-  background-color: #f1f1f1;
+  background-color: #A993FF;
   padding: 15px;
   border-width: .5em;
   border: solid black;
@@ -386,13 +403,15 @@ span {
 }
 .researchbody2 p {
   font-size: 1.4em;
+  font-family: 'Quattrocento Sans', sans-serif;
 }
 .researchbody2 h3 {
   font-size: 2em;
+  font-family: 'Quattrocento', serif;
 }
 .researchbody3 {
   display: table;
-  background-color: #f1f1f1;
+  background-color: #A993FF;
   padding: 15px;
   border-width: .5em;
   border: solid black;
@@ -401,28 +420,32 @@ span {
 }
 .researchbody3 p {
   font-size: 1.4em;
+  font-family: 'Quattrocento Sans', sans-serif;
 }
 .researchbody3 h4 {
   font-size: 2em;
+  font-family: 'Quattrocento', serif;
 }
 .studybody1 {
   position: relative;
   display: table;
-  background-color: #f1f1f1;
+  background-color: #A993FF;
   padding: 15px;
   border-width: .5em;
   border: solid black;
 }
 .studybody1 p {
-  font-size: 1.4em
+  font-size: 1.4em;
+  font-family: 'Quattrocento Sans', sans-serif;
 }
 .studybody1 h2 {
   font-size: 2em;
+ font-family: 'Quattrocento', serif;
 }
 .studybody2 {
   position: inherit;
   display: table;
-  background-color: #f1f1f1;
+  background-color: #A993ff;
   padding: 15px;
   border-width: .5em;
   border: solid black;
@@ -430,14 +453,16 @@ span {
 }
 .studybody2 p {
   font-size: 1.4em;
+  font-family: 'Quattrocento Sans', sans-serif;
 }
 .studybody2 h3 {
   font-size: 2em;
+  font-family: 'Quattrocento', serif;
 }
 .studybody3 {
   position: inherit;
   display: table;
-  background-color: #f1f1f1;
+  background-color: #A993FF;
   padding: 15px;
   margin-top: 15px;
   border-width: .5em;
@@ -446,7 +471,13 @@ span {
 }
 .studybody3 p {
   font-size: 1.4em;
+  font-family: 'Quattrocento Sans', sans-serif;
 }
 .studybody3 h4 {
   font-size: 2em;
+  font-family: 'Quattrocento', serif;
+}
+h1 {
+  font-family: 'Quattrocento', serif;
+  font-size: 2.6em;
 }
