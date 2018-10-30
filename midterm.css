@@ -1,6 +1,5 @@
 
 
-
 @media screen and (max-width: 600px) {
   .footer {
     position: fixed;
@@ -72,7 +71,11 @@ div #studentquote {
  display:block;*/
  position: static;
 }
-
+div #studentquote {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 18px;
+}
 #studentquote span:first-child{
   text-align: center;
   margin-top: 40px;
@@ -115,7 +118,7 @@ div .researchbodytotal {
   text-align: center;
 }
 div .researchbodytotal h2, h3, h4 {
-  text-align: center;
+  text-align: right;
 }
 div .researchbodytotal .researchbodypic {
   width: 100%;
@@ -129,8 +132,8 @@ div .studybodytotal {
   display: inline-block;
   text-align: center;
 }
-div .studybodytotal h2, h3, h4 {
-  text-align: center;
+div .studybodytotal h2, h4 {
+  text-align: right;
 }
 div .studybodytotal .studybodypic {
   width: 100%;
