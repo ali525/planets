@@ -2,6 +2,8 @@
    <head>
      <title> My University Webpage </title>
      <link rel= "stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quattrocento">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quattrocento+Sans">
   </head>
   <body>
     <div id="parent">
@@ -35,7 +37,7 @@
   <img class="researchbodypic"
   src="css/chris2.jpg"
   width="240";
-  height="240";
+  height= "auto";
   alt="Students researching at PBU";
   title="PBU students lead research"
   style="float: right"/>
