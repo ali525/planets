@@ -1,4 +1,8 @@
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
+  .footer {
+    padding: 0;
+    margin: 0;
+  }
   .header a {
     float: none;
     display: block;
@@ -11,34 +15,49 @@
     float: none;
     display: block;
     text-align: left;
+    position: fixed;
   }
   .footer-left {
     float: none;
+    position: fixed;
   }
-  #oldmain {
-    height: auto;
-    width:auto;
+img #oldmain {
+    height: 100%;
+    width: 100%;
   }
+
+  .row {
+    flex-direction: column;
+  }
+  .news{
+    flex-direction: column;
+    height: 33.33%;
+  }
+  /*
   #studypic {
     height: auto;
     width: auto;
-    float: left;
     display block;
+    float: none;
+    align-items: vertical;
   }
  #researchpic {
    height: auto;
    width:auto;
-   float: right;
-   display: block;
- }
+   float: none;
+   margin-right: 0;
+   border: 0;
+  }/* */
  .column {
   width: 100%;
+  height:auto;
+  border-right: none;
 }
-.news {
+.notes {
   width: 100%;
-}
-.notes p2 {
-  font-size: 1em;
+  height: 33.333%
+  border-right: none;
+  position: static;
 }
 #studentquote {
  padding: 20px 10px;
@@ -46,8 +65,28 @@
  margin-top: 40px;
  font-family: 'Quattrocento Sans', sans-serif;
 }
+div #maintext {
+  text-align: center;
+  color: black;
+  position: static;
+  font-size: 1.8em;
+  top:auto;
+  left:auto;
 }
-
+div #subtext {
+  text-align: center;
+  font-style: oblique;
+  color: black;
+  position: static;
+  font-size: 1.4em;
+}
+div #image_container {
+  position: static;
+  width: 100%;
+  bottom: 0;
+  height:inherit;
+}
+}
 /* h1 {
   color: black;
   margin: auto;
@@ -136,8 +175,8 @@
   bottom:0;
   left:0;
   right:0;
-  background-color: white;
-  position: relative;
+/*  background-color: white;/*
+  */ position: relative;
   /* text-align: left; */
   padding-top: 25px;
 }
@@ -151,7 +190,6 @@
   font-size: 2em;
   font-style: oblique;
   color: white;
-  text-shadow: black, 1.5em, 1.5em, 2em;
   z-index: 10;
 }
 #subtext{
@@ -162,7 +200,7 @@
   right: 60px;
   font-size: 1.2em;
   font-style: oblique;
-  color: white; text-shadow: black 1.5em 1.5em 2em
+  color: white;
   z-index: 10;
 }
 .newssub {
