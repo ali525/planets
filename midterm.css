@@ -62,13 +62,19 @@ div #studentquote {
 /* padding: 20px 10px;
  display:block;*/
  position: static;
- margin-top: 40px;
- padding-left: 0;
- padding-right: 0;
- text-align: center;
- font-family: 'Quattrocento Sans', sans-serif;
 }
 
+#studentquote span:first-child{
+  text-align: center;
+  margin-top: 40px;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: center;
+  font-family: 'Quattrocento Sans', sans-serif;
+}
+#studentquote span:last-child{
+  display: none;
+}
 
 
 
