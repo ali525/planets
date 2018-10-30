@@ -1,3 +1,5 @@
+
+
 @media screen and (max-width: 600px) {
   .footer {
     position: fixed;
@@ -21,8 +23,8 @@
     position: fixed;
   }
 img #oldmain {
-    height: 100%;
-    width: 100%;
+    height: auto;
+    width: 80%;
   }
 
   .row {
@@ -58,6 +60,12 @@ div .notes {
   border-right: none;
   position: static;
 }
+
+div .notes p2 {
+  font-size: .8em;
+  text-align: center;
+}
+
 div #studentquote {
 /* padding: 20px 10px;
  display:block;*/
@@ -75,8 +83,6 @@ div #studentquote {
 #studentquote span:last-child{
   display: none;
 }
-
-
 
 div #maintext {
   text-align: center;
@@ -102,8 +108,35 @@ div #image_container {
 div #peter {
   display: none;
 }
-span #studentquote {
-  display: none;
+div .researchbodytotal {
+  vertical-align: top;
+  display: inline-block;
+  text-align: center;
+}
+div .researchbodytotal h2, h3, h4 {
+  text-align: center;
+}
+div .researchbodytotal .researchbodypic {
+  width: 100%;
+}
+div .researchbodytotal p {
+  text-align: center;
+  flex-direction: column;
+}
+div .studybodytotal {
+  vertical-align: top;
+  display: inline-block;
+  text-align: center;
+}
+div .studybodytotal h2, h3, h4 {
+  text-align: center;
+}
+div .studybodytotal .studybodypic {
+  width: 100%;
+}
+div .studybodytotal p {
+  text-align: center;
+  flex-direction: column;
 }
 }
 /* h1 {
