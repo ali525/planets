@@ -1,5 +1,6 @@
 
 
+
 @media screen and (max-width: 600px) {
   .footer {
     position: fixed;
@@ -499,6 +500,7 @@ font-family: 'Quattrocento', serif;
 .researchbody2 h3 {
   font-size: 2em;
   font-family: 'Quattrocento', serif;
+  text-align: right;
 }
 .researchbody3 {
   display: table;
@@ -549,6 +551,7 @@ font-family: 'Quattrocento', serif;
 .studybody2 h3 {
   font-size: 2em;
   font-family: 'Quattrocento', serif;
+  text-align: right;
 }
 .studybody3 {
   position: inherit;
