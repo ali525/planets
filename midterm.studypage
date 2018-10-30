@@ -2,6 +2,8 @@
    <head>
      <title> My University Webpage </title>
      <link rel= "stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quattrocento">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quattrocento+Sans">
   </head>
   <body>
     <div id="parent">
@@ -17,6 +19,7 @@
 
 <h1>Study</h1>
 
+<div class="studybodytotal">
 <div class="studybody1">
   <h2>Course 101</h2>
    <img class="studybodypic"
@@ -34,7 +37,7 @@
   <img class="studybodypic"
   src="css/study.jpg"
   width="240";
-  height="240";
+  height="auto";
   alt="PBU scholars";
   title="Students are the future"
   style="float: right"/>
@@ -52,7 +55,7 @@
      style="float: left"/>
   <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dignissim sapien lorem, ac sagittis mauris dignissim sed. Duis hendrerit sapien est, eu lobortis odio aliquam in. </p>
 </div>
-
+</div>
 
 <div class="footer">
 <a href="#default" class="logo">PontyBridge University</a>
