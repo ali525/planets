@@ -1,8 +1,6 @@
 @media screen and (max-width: 600px) {
-  div .footer {
-    padding: 0;
-    margin: 0;
-    position: absolute;
+  .footer {
+    position: fixed;
   }
   .header a {
     float: none;
@@ -60,12 +58,20 @@ div .notes {
   border-right: none;
   position: static;
 }
-#studentquote {
- padding: 20px 10px;
- display:block;
+div #studentquote {
+/* padding: 20px 10px;
+ display:block;*/
+ position: static;
  margin-top: 40px;
+ padding-left: 0;
+ padding-right: 0;
+ text-align: center;
  font-family: 'Quattrocento Sans', sans-serif;
 }
+
+
+
+
 div #maintext {
   text-align: center;
   color: black;
@@ -86,6 +92,12 @@ div #image_container {
   width: 100%;
   bottom: 0;
   height:inherit;
+}
+div #peter {
+  display: none;
+}
+span #studentquote {
+  display: none;
 }
 }
 /* h1 {
