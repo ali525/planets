@@ -51,18 +51,28 @@
   .header-right {
     display: none;
   }
-  .footer a {
+div.footer a {
     float: none;
-    display: block;
-    text-align: left;
-    font-size: .4em;
+    font-size: 10px;
+    display: inline;
+    text-align: center;
+    padding: 15px;
       }
-  .footer-left {
+div.footer-left {
     float: none;
-    font-size: .4em;
+    text-align: center;
+    font-size: 10px;
   }
-  .footer a.logo {
-    font-size: .4em;
+  div.footer a.logo {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+  }
+  div .footer {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   img#oldmain {
     height: 60%;
@@ -87,11 +97,14 @@ div .notes {
   height: 33.333%;
   border-right: none;
   position: static;
+
 }
 
 div .notes p {
   font-size: 1em;
   text-align: center;
+  position: static;
+  margin-left: 0;
 }
 
 div #studentquote {
