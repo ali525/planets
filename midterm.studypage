@@ -1,11 +1,14 @@
+<!DOCTYPE html>
 <html lang= "en">
    <head>
      <title> My University Webpage </title>
      <link rel= "stylesheet" href="css/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta charset="utf-8">
      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quattrocento">
      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quattrocento+Sans">
   </head>
+
   <body>
     <div id="parent">
       <div class="header">
@@ -33,10 +36,8 @@
   <h2>Course 101</h2>
    <img class="studybodypic"
      src="css/study.jpg"
-     width="240";
-     height:"240";
-     alt="Scholars";
-     title="PBU scholars become future leaders";
+     alt="Scholars"
+     title="PBU scholars become future leaders"
      style="float: left"/>
   <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dignissim sapien lorem, ac sagittis mauris dignissim sed. Duis hendrerit sapien est, eu lobortis odio aliquam in. </p>
 </div>
@@ -45,9 +46,7 @@
   <h3>Course 102</h3>
   <img class="studybodypic"
   src="css/study.jpg"
-  width="240";
-  height="auto";
-  alt="PBU scholars";
+  alt="PBU scholars"
   title="Students are the future"
   style="float: right"/>
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dignissim sapien lorem, ac sagittis mauris dignissim sed. Duis hendrerit sapien est, eu lobortis odio aliquam in. </p>
@@ -57,10 +56,8 @@
   <h4>Course 201</h4>
    <img class="studybodypic"
      src="css/study.jpg"
-     width="240";
-     height:"240";
-     alt="Scholars enjoy time here";
-     title="Students are scholars";
+     alt="Scholars enjoy time here"
+     title="Students are scholars"
      style="float: left"/>
   <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dignissim sapien lorem, ac sagittis mauris dignissim sed. Duis hendrerit sapien est, eu lobortis odio aliquam in. </p>
 </div>
@@ -73,6 +70,7 @@
  <a href="#news">News</a>
 <a class="active" href="webpage_study.html">Study</a>
 <a href= "webpage_research.html">Research</a>
+</div>
 </div>
 
 
