@@ -11,16 +11,20 @@
 
   <body>
     <div id="parent">
-      <div class="header">
-  <a href="#default" class="logo">PontyBridge University</a>
-  <div class="header-right">
-    <a href="webpage_home.html">About</a>
-    <a href="#news">News</a>
-    <a class="active" href="webpage_study.html">Study</a>
-    <a href= "webpage_research.html">Research</a>
 
+<!-- This is my header -->
+
+      <div class="header">
+        <a href="#default" class="logo">PontyBridge University</a>
+        <div class="header-right">
+          <a href="webpage_home.html">About</a>
+          <a href="#news">News</a>
+          <a class="active" href="webpage_study.html">Study</a>
+          <a href= "webpage_research.html">Research</a>
   </div>
 </div>
+
+<!-- This is my dropdown menu which appears when on mobile -->
 <div class="dropdown">
   <button class="navbar">PontyBridge</button>
   <div class="dropdown-links">
@@ -29,50 +33,56 @@
     <a href= "webpage_research.html">Research</a>
   </div>
 </div>
+
 <h1>Study</h1>
 
+<!-- This div includes all three boxes for the study page.-->
 <div class="studybodytotal">
-<div class="studybody1">
-  <h2>Course 101</h2>
-   <img class="studybodypic"
+
+<!-- All three divs are basically laid out the same except the images are floated to different sides. -->
+  <div class="studybody1">
+    <h2>Course 101</h2>
+    <img class="studybodypic"
      src="css/study.jpg"
      alt="Scholars"
      title="PBU scholars become future leaders"
      style="float: left"/>
-  <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dignissim sapien lorem, ac sagittis mauris dignissim sed. Duis hendrerit sapien est, eu lobortis odio aliquam in. </p>
-</div>
+     <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dignissim sapien lorem, ac sagittis mauris dignissim sed. Duis hendrerit sapien est, eu lobortis odio aliquam in. </p>
+   </div>
 
-<div class="studybody2">
-  <h3>Course 102</h3>
-  <img class="studybodypic"
+  <div class="studybody2">
+    <h3>Course 102</h3>
+    <img class="studybodypic"
   src="css/study.jpg"
   alt="PBU scholars"
   title="Students are the future"
   style="float: right"/>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dignissim sapien lorem, ac sagittis mauris dignissim sed. Duis hendrerit sapien est, eu lobortis odio aliquam in. </p>
-</div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dignissim sapien lorem, ac sagittis mauris dignissim sed. Duis hendrerit sapien est, eu lobortis odio aliquam in. </p>
+  </div>
 
-<div class="studybody3">
-  <h4>Course 201</h4>
-   <img class="studybodypic"
+  <div class="studybody3">
+    <h4>Course 201</h4>
+    <img class="studybodypic"
      src="css/study.jpg"
      alt="Scholars enjoy time here"
      title="Students are scholars"
      style="float: left"/>
-  <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dignissim sapien lorem, ac sagittis mauris dignissim sed. Duis hendrerit sapien est, eu lobortis odio aliquam in. </p>
-</div>
-</div>
-
-<div class="footer">
-<a href="#default" class="logo">PontyBridge University</a>
-<div class="footer-left">
- <a href="webpage_home.html">About</a>
- <a href="#news">News</a>
-<a class="active" href="webpage_study.html">Study</a>
-<a href= "webpage_research.html">Research</a>
-</div>
+     <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dignissim sapien lorem, ac sagittis mauris dignissim sed. Duis hendrerit sapien est, eu lobortis odio aliquam in. </p>
+   </div>
 </div>
 
+<!--This is my footer!-->
 
-</div>
+  <div class="footer">
+    <a href="#default" class="logo">PontyBridge University</a>
+    <div class="footer-left">
+      <a href="webpage_home.html">About</a>
+      <a href="#news">News</a>
+      <a class="active" href="webpage_study.html">Study</a>
+      <a href= "webpage_research.html">Research</a>
+    </div>
+  </div>
+
+
+ </div>
 </body>
