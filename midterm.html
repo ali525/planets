@@ -8,20 +8,23 @@
      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quattrocento">
      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quattrocento+Sans">
   </head>
-
-  <body>
-
+<body>
   <div id="parent">
 
-      <div class="header">
-        <a href="#default" class="logo">PontyBridge University</a>
-        <div class="header-right">
-          <a class="active" href="webpage_home.html">About</a>
-          <a href="#news">News</a>
-          <a href="webpage_study.html">Study</a>
-          <a href= "webpage_research.html">Research</a>
-  </div>
- </div>
+<!-- This is my header which can be viewed on a desktop and when width is greater than 600px.
+I referred to this page https://www.w3schools.com/howto/howto_css_responsive_header.asp -->
+    <div class="header">
+      <a href="#default" class="logo">PontyBridge University</a>
+      <div class="header-right">
+        <a class="active" href="webpage_home.html">About</a>
+        <a href="#news">News</a>
+        <a href="webpage_study.html">Study</a>
+        <a href= "webpage_research.html">Research</a>
+      </div>
+    </div>
+
+<!-- This is the dropdown bar which appears when less than 600px
+I used https://www.w3schools.com/css/css_dropdowns.asp to assist with this -->
 
 <div class="dropdown">
   <button class="navbar">PontyBridge</button>
@@ -32,32 +35,42 @@
   </div>
 </div>
 
+<!-- This container holds my main uni picture and the font for it. I figured a container made
+sense for this design because I had to pull the font off of the picture later. -->
 
-   <div id="image_container">
-      <img id="oldmain"
-           src="css/old_main.jpg"
-          alt="Old Main"
-          title= "A picture of the main building at PontyBridge University"/>
+ <div id="image_container">
+  <img id="oldmain"
+       src="css/old_main.jpg"
+       alt="Old Main"
+       title= "A picture of the main building at PontyBridge University"/>
     <div id="maintext">PontyBridge Lives Here</div>
     <div id="subtext">Teaching students to be leaders since 1855</div>
   </div>
 
-<div class="row">
-  <div class="column">
-    <img src= "css/study.jpg"
-       alt="Scholars at PontyBridge maintain high marks"
-       title="PontyBridge scholars"
-       width="100%">
-    <div class="caption">Study</div>
+<!-- I chose to do rows and columns for the research/study and news sections because I wanted
+the images aligned and text under them.
+I referred to this site: https://www.w3schools.com/howto/howto_css_images_side_by_side.asp -->
+
+  <div class="row">
+    <div class="column">
+      <img src= "css/study.jpg"
+        alt="Scholars at PontyBridge maintain high marks"
+        title="PontyBridge scholars"
+        width="100%">
+       <div class="caption">Study</div>
+     </div>
+     <div class="column">
+       <img src="css/chris2.jpg"
+        alt="PontyBridge serves as a top research institute"
+        title="PontyBridge students and professors complete leading research"
+        width="100%"/>
+      <div class="caption">Research</div>
+    </div>
   </div>
-  <div class="column">
-    <img src="css/chris2.jpg"
-     alt="PontyBridge serves as a top research institute"
-     title="PontyBridge students and professors complete leading research"
-     width="100%"/>
-     <div class="caption">Research</div>
-   </div>
- </div>
+
+<!-- I wanted to use columns again but it wasn't working so I played around with a few different ways to
+set up this section and settled on span. I used some of the tips from here:
+https://stackoverflow.com/questions/13408394/how-to-vertically-align-both-image-and-text-in-a-div-using-css -->
 
 
   <div id="studentquote">
@@ -69,10 +82,14 @@
       style="width:35%; float:right"/></span>
     </div>
 
+<!-- Again, I used columns and rows -->
     <div class="news">
 
-      <div class="notes">
+<!-- I liked the idea of the news being written on a notebook when it was on a desktop
+but it looked boring in mobile view so I looked up how to change out the picture when there is a
+media query so it's more interesting. -->
 
+      <div class="notes">
         <picture>
           <source media="(min-width: 600px)" srcset="css/notebook.jpg">
           <source media="(max-width: 600px)" srcset="css/interu.jpg">
@@ -81,53 +98,46 @@
           title="Graduation Success"
           width="100%">
         </picture>
-
         <div class="news_caption">Victory at inter-university games</div>
-        <p>The university has triumphed at inter-university games again</p>
+         <p>The university has triumphed at inter-university games again</p>
       </div>
-        <div class="notes">
-
-          <picture>
-            <source media="(min-width: 600px)" srcset="css/notebook.jpg">
-            <source media="(max-width: 600px)" srcset="css/gradsuccess.jpg">
-          <img src="css/notebook.jpg"
+    <div class="notes">
+      <picture>
+        <source media="(min-width: 600px)" srcset="css/notebook.jpg">
+        <source media="(max-width: 600px)" srcset="css/gradsuccess.jpg">
+        <img src="css/notebook.jpg"
             alt="Graduation Success"
             title="Graduation Success"
             width="100%">
-          </picture>
-
-          <div class="news_caption">Graduation Success</div>
-          <p>Another bumper year of graduates head into the world</p>
-        </div>
-
-        <div class="notes">
-
-          <picture>
-            <source media="(min-width: 600px)" srcset="css/notebook.jpg">
-            <source media="(max-width: 600px)" srcset="css/villa.jpg">
-          <img src="css/notebook.jpg"
+      </picture>
+      <div class="news_caption">Graduation Success</div>
+       <p>Another bumper year of graduates head into the world</p>
+      </div>
+    <div class="notes">
+      <picture>
+        <source media="(min-width: 600px)" srcset="css/notebook.jpg">
+        <source media="(max-width: 600px)" srcset="css/villa.jpg">
+        <img src="css/notebook.jpg"
             alt="Graduation Success"
             title="Graduation Success"
             width="100%">
-          </picture>
-
-          <div class="news_caption">Staff rewarded</div>
-          <p>Excellent Web Apps lecturer rewarded with luxury villa</p>
-        </div>
-      </div>
-
-      <div class="footer">
-        <a href="#default" class="logo">PontyBridge University</a>
-         <div class="footer-left">
-           <a class="active" href="#home">About</a>
-           <a href="#news">News</a>
-          <a href="webpage_study.html">Study</a>
-          <a href= "webpage_research.html">Research</a>
-        </div>
+      </picture>
+      <div class="news_caption">Staff rewarded</div>
+        <p>Excellent Web Apps lecturer rewarded with luxury villa</p>
       </div>
     </div>
 
+<!-- This is my footer. Using what I had learned through my header, I wrote this but reversed the code -->
 
+    <div class="footer">
+      <a href="#default" class="logo">PontyBridge University</a>
+      <div class="footer-left">
+        <a class="active" href="#home">About</a>
+        <a href="#news">News</a>
+        <a href="webpage_study.html">Study</a>
+        <a href= "webpage_research.html">Research</a>
+      </div>
+    </div>
 
-  </body>
-
+  </div>
+</body>
