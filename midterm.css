@@ -1,5 +1,4 @@
 
-
 @media screen and (min-width: 600px) {
 .dropdown {
    display: none;
@@ -7,9 +6,7 @@
 }
 
 @media screen and (max-width: 600px) {
-  .footer {
-    position: fixed;
-  }
+
 .navbar {
     background-color: #A993ff;
     font-family: 'Quattrocento', serif;
@@ -28,7 +25,7 @@
 .dropdown-links {
   display: none;
   position: absolute;
-  background-color: #9A55B2;
+  background-color: #C0AABD;
 }
 .dropdown-links a {
   color: black;
@@ -37,7 +34,7 @@
   font-family: 'Quattrocento Sans', sans-serif;
 }
 .dropdown-links a:hover {
-  background-color: #791B99
+  background-color: #791B99;
 }
 .dropdown:hover .dropdown-links {
   display: block;
@@ -49,31 +46,29 @@
   display: none;
 }
   .header a {
-/*   float: none;
-    display: block;
-    text-align: left;*/
     display: none;
   }
   .header-right {
-/*    float: none;*/
     display: none;
   }
   .footer a {
     float: none;
     display: block;
     text-align: left;
-    position: fixed;
-  }
+    font-size: .4em;
+      }
   .footer-left {
     float: none;
-    position: fixed;
+    font-size: .4em;
   }
-img #oldmain {
-    height: auto;
-    width: 80%;
+  .footer a.logo {
+    font-size: .4em;
+  }
+  img#oldmain {
+    height: 60%;
+    width: 100%;
     position: static;
   }
-
   .row {
     flex-direction: column;
   }
@@ -81,21 +76,7 @@ img #oldmain {
     flex-direction: column;
     height: 33.33%;
   }
-  /*
-  #studypic {
-    height: auto;
-    width: auto;
-    display block;
-    float: none;
-    align-items: vertical;
-  }
- #researchpic {
-   height: auto;
-   width:auto;
-   float: none;
-   margin-right: 0;
-   border: 0;
-  }/* */
+
  .column {
   width: 100%;
   height:auto;
@@ -103,13 +84,13 @@ img #oldmain {
 }
 div .notes {
   width: 100%;
-  height: 33.333%
+  height: 33.333%;
   border-right: none;
   position: static;
 }
 
-div .notes p2 {
-  font-size: .8em;
+div .notes p {
+  font-size: 1em;
   text-align: center;
 }
 
@@ -169,6 +150,7 @@ div .researchbodytotal h2, h3, h4 {
 }
 div .researchbodytotal .researchbodypic {
   width: 100%;
+  height: auto;
 }
 div .researchbodytotal p {
   text-align: center;
@@ -184,23 +166,13 @@ div .studybodytotal h2, h4 {
 }
 div .studybodytotal .studybodypic {
   width: 100%;
+  height: auto;
 }
 div .studybodytotal p {
   text-align: center;
   flex-direction: column;
 }
 }
-/* h1 {
-  color: black;
-  margin: auto;
-} */
-/* ul li {
-  color: gray;
-  display: inline;
-  margin-right: 20px;
-  font-size: 1.2em
-  position: relative;
-} */
 
 .header {
   overflow: hidden;
@@ -278,16 +250,12 @@ div .studybodytotal p {
   bottom:0;
   left:0;
   right:0;
-/*  background-color: white;/*
-  */ position: relative;
-  /* text-align: left; */
+  position: relative;
   padding-top: 25px;
 }
 
 #maintext {
   position: absolute;
-  /* top: 20px; */
-  /* right: 15px; */
   top: 90px;
   left: 60px;
   font-size: 2em;
@@ -297,11 +265,9 @@ div .studybodytotal p {
 }
 #subtext{
   position: absolute;
-  /* top: 20px; */
-  /* right: 15px; */
   bottom: 90px;
   right: 60px;
-  font-size: 1.2em;
+  font-size: 1.4em;
   font-style: oblique;
   color: white;
   z-index: 10;
@@ -318,7 +284,7 @@ div .studybodytotal p {
   bottom: 180px;
   margin-left: 15px;
 }
-.notes p2{
+.notes p {
   position:relative;
   text-align: left;
   font-size: 1em;
@@ -332,21 +298,6 @@ div .studybodytotal p {
   box-sizing: border-box;
 }
 
-/*.img-frame{
-  display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
-  height: 30px;
-}/*
-/*
-.studypic {
-  float: left;
-  display: inline-block;
-  margin:15px;
-  background:transparent;
-  padding:8px;
-  border:.5em solid #999999;
-}*/
 .caption {
   text-align:center;
   margin-top:4px;
@@ -360,24 +311,7 @@ div .studybodytotal p {
   word-break: break-all;
   font-family: 'Quattrocento Sans', sans-serif;
 }
-/*
-.researchpic{
-  float: right;
-  display:inline-block;
-  margin: 15px;
-  background:transparent;
-  padding:8px;
-  border:.5em solid #999999;}
-/*.column {
-  overflow: hidden;
-  display: block;
-  margin: 20px;
-  padding: 20px;
-  top: 35px;
-  height: auto;
-  max-width: auto;
-  overflow-x:auto;
-}*/
+
 
 .row {
   display: flex;
@@ -397,82 +331,8 @@ div .studybodytotal p {
   flex: 33.333%;
   padding-left: 5px;
 }
-/*#studyresearch{
- width: 80%;
- height: 80%;
- position: absolute;
- margin:auto;
- top:0;
- bottom:0;
- left:0;
- right:0;
- background-color: white;
- position: relative;
- padding-top: 25px;
- position: inline;
-}*/
-/*#studypic {
-  overflow: hidden;
-  position: inline;
-  height: 50%;
-  width: 50%;
-  margin:auto;
-  float:left;
-  margin: 5px;
-  padding-left: :5px;
-  padding-right: 5px;
-  margin-left: 5px;
-  margin-bottom: 15px;
-  box-sizing: border-box;
-}
-#researchpic {
-overflow: hidden;
-position: inline;
-box-sizing: border-box;
-height: 50%;
-width: 50%;
-margin: 5px;
-padding: 5px;
-padding-left: 5px;
-padding-right: 5px;
-margin-left: 5px
-float: right;
-object-fit: scale-down;
-margin-bottom: 15px;
-}/*
-/* #studentquote{
-  float: left;
-  color: black;
-  text-align: center;
-  padding: 12px;
-  text-decoration: none;
-  font-size: 18px;
-  line-height: 25px;
-  border-radius: 4px;
-}/*
-*/
-/*#studentquote {
-  overflow: hidden;
-  margin: 25px;
-  padding: 20px;
-  padding-left: 5px;
-  padding-right: 5px;
-  background-color: #f1f1f1;
-  height: 40%;
-  width: 100%;
-  word-break: break-all;
-}
-h1 {
-  font-size: 1.8em;
-  font-style: oblique;
-}
-p {
-  font-size: 1.3em
-  word-break:break-all;
-  float: right;
-  word-wrap:
-} /*
-*/#peter {
+
+#peter {
   vertical-align: middle;
   display: table-cell;
   padding-right: 20px;
@@ -497,25 +357,29 @@ span {
 .researchpageinfo {
   display: table;
   background-color: #A993FF;
-  font-size: 1.5em
+  font-size: 1.5em;
   font-style:normal;
   margin: 20px;
 }
 .researchbodypic {
-  style= "float: left;
+  float: left;
   margin-right: 10px;
   margin-bottom: 5px;
   border: solid black 1px;
   padding: 2px;
   display: table-cell;
+  height: 180px;
+  width: 180px;
 }
 .studybodypic {
-  style= "float: left;
+  float: left;
   margin-right: 10px;
   margin-bottom: 5px;
   border: solid black 1px;
   padding: 2px;
   display: table-cell;
+  height: 210px;
+  width: 210px;
 }
 .researchbodytotal {
   display:block;
