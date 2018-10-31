@@ -14,9 +14,17 @@
     <a href="#news">News</a>
     <a href="webpage_study.html">Study</a>
     <a class="active" href= "#research">Research</a>
+
   </div>
 </div>
-
+<div class="dropdown">
+  <button class="navbar">PontyBridge</button>
+  <div class="dropdown-links">
+    <a class="active" href="webpage_home.html">About</a>
+    <a href="webpage_study.html">Study</a>
+    <a href= "webpage_research.html">Research</a>
+  </div>
+</div>
 <h1>Research</h1>
 
 <div class="researchbodytotal">
