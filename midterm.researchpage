@@ -9,70 +9,81 @@
      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quattrocento+Sans">
   </head>
 
+<!-- This is my header -->
 
-  <body>
+<body>
     <div id="parent">
+
+<!-- This is my header -->
+
       <div class="header">
-  <a href="#default" class="logo">PontyBridge University</a>
-  <div class="header-right">
-    <a href="webpage_home.html">About</a>
-    <a href="#news">News</a>
-    <a href="webpage_study.html">Study</a>
-    <a class="active" href= "#research">Research</a>
+        <a href="#default" class="logo">PontyBridge University</a>
+        <div class="header-right">
+          <a href="webpage_home.html">About</a>
+          <a href="#news">News</a>
+          <a href="webpage_study.html">Study</a>
+          <a class="active" href= "#research">Research</a>
+        </div>
+      </div>
 
-  </div>
-</div>
-<div class="dropdown">
-  <button class="navbar">PontyBridge</button>
-  <div class="dropdown-links">
-    <a class="active" href="webpage_home.html">About</a>
-    <a href="webpage_study.html">Study</a>
-    <a href= "webpage_research.html">Research</a>
-  </div>
-</div>
-<h1>Research</h1>
+<!-- This is my dropdown menu which appears when on mobile -->
 
-<div class="researchbodytotal">
-<div class="researchbody1">
-  <h2>Project One</h2>
-   <img class="researchbodypic"
+    <div class="dropdown">
+      <button class="navbar">PontyBridge</button>
+      <div class="dropdown-links">
+        <a class="active" href="webpage_home.html">About</a>
+        <a href="webpage_study.html">Study</a>
+        <a href= "webpage_research.html">Research</a>
+      </div>
+    </div>
+
+    <h1>Research</h1>
+
+    <div class="researchbodytotal">
+
+<!-- All three divs are basically laid out the same except the images are floated to different sides. -->
+      <div class="researchbody1">
+        <h2>Project One</h2>
+        <img class="researchbodypic"
      src="css/chris2.jpg"
      alt="Students researching"
      title="Students lead top research projects"
      style="float: left"/>
-  <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dignissim sapien lorem, ac sagittis mauris dignissim sed. Duis hendrerit sapien est, eu lobortis odio aliquam in. </p>
-</div>
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dignissim sapien lorem, ac sagittis mauris dignissim sed. Duis hendrerit sapien est, eu lobortis odio aliquam in. </p>
+      </div>
 
-<div class="researchbody2">
-  <h3>Project Two</h3>
-  <img class="researchbodypic"
+      <div class="researchbody2">
+        <h3>Project Two</h3>
+        <img class="researchbodypic"
   src="css/chris2.jpg"
   alt="Students researching at PBU"
   title="PBU students lead research"
   style="float: right"/>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dignissim sapien lorem, ac sagittis mauris dignissim sed. Duis hendrerit sapien est, eu lobortis odio aliquam in. </p>
-</div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dignissim sapien lorem, ac sagittis mauris dignissim sed. Duis hendrerit sapien est, eu lobortis odio aliquam in. </p>
+      </div>
 
-<div class="researchbody3">
-  <h4>Project Three</h4>
-   <img class="researchbodypic"
+      <div class="researchbody3">
+        <h4>Project Three</h4>
+        <img class="researchbodypic"
      src="css/chris2.jpg"
      alt="Students researching"
      title="Students lead top research projects"
      style="float: left"/>
-  <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dignissim sapien lorem, ac sagittis mauris dignissim sed. Duis hendrerit sapien est, eu lobortis odio aliquam in. </p>
-</div>
-</div>
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dignissim sapien lorem, ac sagittis mauris dignissim sed. Duis hendrerit sapien est, eu lobortis odio aliquam in. </p>
+      </div>
+    </div>
 
-<div class="footer">
-  <a href="#default" class="logo">PontyBridge University</a>
-  <div class="footer-left">
-    <a href="webpage_home.html">About</a>
-    <a href="#news">News</a>
-    <a href="webpage_study.html">Study</a>
-    <a class="active" href= "webpage_research.html">Research</a>
-  </div>
-</div>
+<!--This is my footer!-->
 
-</div>
+    <div class="footer">
+      <a href="#default" class="logo">PontyBridge University</a>
+      <div class="footer-left">
+        <a href="webpage_home.html">About</a>
+        <a href="#news">News</a>
+        <a href="webpage_study.html">Study</a>
+        <a class="active" href= "webpage_research.html">Research</a>
+      </div>
+    </div>
+
+ </div>
 </body>
