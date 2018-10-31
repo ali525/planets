@@ -1,10 +1,15 @@
+<!DOCTYPE html>
 <html lang= "en">
    <head>
      <title> My University Webpage </title>
      <link rel= "stylesheet" href="css/style.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta charset="utf-8">
      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quattrocento">
      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quattrocento+Sans">
   </head>
+
+
   <body>
     <div id="parent">
       <div class="header">
@@ -32,10 +37,8 @@
   <h2>Project One</h2>
    <img class="researchbodypic"
      src="css/chris2.jpg"
-     width="240";
-     height:"240";
-     alt="Students researching";
-     title="Students lead top research projects";
+     alt="Students researching"
+     title="Students lead top research projects"
      style="float: left"/>
   <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dignissim sapien lorem, ac sagittis mauris dignissim sed. Duis hendrerit sapien est, eu lobortis odio aliquam in. </p>
 </div>
@@ -44,9 +47,7 @@
   <h3>Project Two</h3>
   <img class="researchbodypic"
   src="css/chris2.jpg"
-  width="240";
-  height= "auto";
-  alt="Students researching at PBU";
+  alt="Students researching at PBU"
   title="PBU students lead research"
   style="float: right"/>
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dignissim sapien lorem, ac sagittis mauris dignissim sed. Duis hendrerit sapien est, eu lobortis odio aliquam in. </p>
@@ -56,24 +57,22 @@
   <h4>Project Three</h4>
    <img class="researchbodypic"
      src="css/chris2.jpg"
-     width="240";
-     height:"240";
-     alt="Students researching";
-     title="Students lead top research projects";
+     alt="Students researching"
+     title="Students lead top research projects"
      style="float: left"/>
   <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dignissim sapien lorem, ac sagittis mauris dignissim sed. Duis hendrerit sapien est, eu lobortis odio aliquam in. </p>
 </div>
 </div>
 
 <div class="footer">
-<a href="#default" class="logo">PontyBridge University</a>
-<div class="footer-left">
- <a href="webpage_home.html">About</a>
- <a href="#news">News</a>
-<a href="webpage_study.html">Study</a>
-<a class="active" href= "webpage_research.html">Research</a>
+  <a href="#default" class="logo">PontyBridge University</a>
+  <div class="footer-left">
+    <a href="webpage_home.html">About</a>
+    <a href="#news">News</a>
+    <a href="webpage_study.html">Study</a>
+    <a class="active" href= "webpage_research.html">Research</a>
+  </div>
 </div>
-
 
 </div>
 </body>
