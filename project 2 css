@@ -1,0 +1,150 @@
+/* This sets the color and style for my header and footer.
+As aforementioned in HTML homepage, I wrote the code for footer based off of header */
+
+.header {
+  overflow: hidden;
+  background-color: #A993ff;
+  padding: 20px 10px;
+}
+.footer{
+  overflow: hidden;
+  background-color: #A993FF;
+  padding: 20px 10px;
+}
+.footer a {
+  float: right;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+  font-family: 'Quattrocento', serif;
+}
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+  font-family: 'Quattrocento', serif;
+}
+.header a.logo {
+  font-size: 40px;
+  font-weight: bold;
+  font-family: 'Quattrocento', serif;
+}
+.footer a.logo {
+  font-size: 40px;
+  font-weight: bold;
+  font-family: 'Quattrocento', serif;
+}
+.header a.active {
+  background-color: #9A55B2;
+  color: white;
+  font-family: 'Quattrocento', serif;
+}
+.footer a.active {
+  background-color: #9A55B2;
+  color: white;
+  font-family: 'Quattrocento', serif;
+}
+.header-right {
+  float: right;
+  font-family:'Quattrocento Sans', sans-serif;
+}
+.footer-left {
+  float: left;
+  font-family: 'Quattrocento Sans', sans-serif;
+}
+
+
+
+body{
+  background: #f2f2f2;
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+#searchcontainer {
+  width: 80%;
+  height: 80%;
+  position: absolute;
+ margin:auto;
+ top:0;
+ bottom:0;
+ left:0;
+ right:0;
+ position: relative;
+ padding-top: 25px;
+}
+
+
+/* this is css for the search box -- I referred to this site: https://webdesign.tutsplus.com/tutorials/css-experiments-with-a-search-form-input-and-button--cms-22069*/
+
+.box{
+  margin: 100px auto;
+  width: 300px;
+  height: 50px;
+}
+
+.boxcontainer{
+  width: 300px;
+  vertical-align: middle;
+  white-space: nowrap;
+  position: relative;
+}
+
+.boxcontainer input#search{
+  width: 300px;
+  height: 50px;
+  background: #A993ff;
+  border: none;
+  font-size: 10pt;
+  float: left;
+  color: #63717f;
+  padding-left: 45px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+
+-webkit-transition: background .55s ease;
+-moz-transition: background .55s ease;
+-ms-transition: background .55s ease;
+-o-transition: background .55s ease;
+transition: background .55s ease;
+}
+
+.boxcontainer input#search::-webkit-input-placeholder {
+   color: #65737e;
+}
+
+.boxcontainer input#search:-moz-placeholder { /* Firefox 18- */
+   color: #65737e;
+}
+
+.boxcontainer input#search::-moz-placeholder {  /* Firefox 19+ */
+   color: #65737e;
+}
+
+.boxcontainer input#search:-ms-input-placeholder {
+   color: #65737e;
+}
+
+.boxcontainer .icon{
+  position: absolute;
+  top: 50%;
+  margin-left: 17px;
+  margin-top: 17px;
+  z-index: 1;
+  color: #4f5b66;
+}
+
+.boxcontainer input#search:hover, .boxcontainer input#search:focus, .boxcontainer input#search:active{
+    outline:none;
+    background: #ffffff;
+  }
