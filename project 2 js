@@ -1,0 +1,27 @@
+document.getElementById("button1").onclick = doFunction; // attach to button
+
+// do on button click
+function doFunction() {
+
+   // do get request
+    httpGetAsync ('http://127.0.0.1:3000/authors', // url
+    testFunction); // callback
+}
+
+// referred to https://stackoverflow.com/questions/247483/http-get-request-in-javascript for help
+
+function httpGetAsync(theUrl, callback)
+{
+    var xmlHttp = new XMLHttpRequest();
+    xmlHttp.onreadystatechange = function() {
+        if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
+            callback(xmlHttp.responseText);
+    }
+    xmlHttp.open("GET", theUrl, true); // true for asynchronous
+    xmlHttp.send(null);
+}
+
+function testFunction(response) {
+  let gotSomething = JSON.parse(response);
+  alert (gotSomething);
+}
