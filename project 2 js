@@ -1,3 +1,4 @@
+
 document.getElementById("button1").onclick = doFunction; // attach to button
 
 // do on button click
@@ -6,7 +7,7 @@ function doFunction() {
    // do get request
     httpGetAsync ('http://127.0.0.1:3000/authors', // url
     testFunction); // callback
-}
+} // post instead -- google how to post/put -- instead of getting you'll be sending - can get in separate js file
 
 // referred to https://stackoverflow.com/questions/247483/http-get-request-in-javascript for help
 
@@ -23,5 +24,48 @@ function httpGetAsync(theUrl, callback)
 
 function testFunction(response) {
   let gotSomething = JSON.parse(response);
-  alert (gotSomething);
+  let searchTerm = document.getElementById("search").value;
+  var myStringArray = ['User Found'];
+  var arrayLength = myStringArray.length;
+  for (var i = 0; i < arrayLength; i++) {
+    alert(myStringArray[i]);
+    //Do something
+}
+
+  document.getElementById("resultscontainer").innerHTML = gotSomething[0].name;
+}
+
+
+function makeAuthorObject() {
+  let author = new Object();
+  author.id = "2";
+  author.name = "Jaja";
+
+
+  let toSend = JSON.toString(author);
+
+  httpPutAsync(url, callback, toSend);
+}
+
+
+
+function openCity(evt, cityName) {
+  // Declare all variables
+  var i, tabcontent, tablinks;
+
+  // Get all elements with class="tabcontent" and hide them
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Get all elements with class="tablinks" and remove the class "active"
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  // Show the current tab, and add an "active" class to the button that opened the tab
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
 }
