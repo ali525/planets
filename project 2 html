@@ -19,17 +19,70 @@ I referred to this page https://www.w3schools.com/howto/howto_css_responsive_hea
       </div>
     </div>
 
+    <div class="tab">
+      <button class="tablinks" onclick="openCity(event, 'Users')">Users</button>
+      <button class="tablinks" onclick="openCity(event, 'Books')">Books</button>
+      <button class="tablinks" onclick="openCity(event, 'Loans')">Loans</button>
+    </div>
 
-<!-- This is the search box -->
-    <div id="searchcontainer">
-      <div class="box">
-        <div class="boxcontainer">
-          <span class="icon"><i class="fa fa-search"></i></span>
-            <input type="search" id="search" placeholder="Search..." />
-            <button id="button1">Click Me!</button>
+    <!-- Tab content -->
+    <div id="Users" class="tabcontent">
+      <h3>Users</h3>
+      <div id="searchcontainer">
+        <div class="box">
+          <div class="boxcontainer">
+            <span class="icon"><i class="fa fa-search"></i></span>
+              <input type="search" id="search" placeholder="Search..." />
+              <button id="button1">Clicks Me!</button>
+          </div>
         </div>
       </div>
+
+      <form>
+        <label for="add"><input type="checkbox" name="add" id="add" />Add a User</label><br />
+        <label for="delete"><input type="checkbox" name="delete" id="delete" />Remove a User</label>
+        <label for="update"><input type="checkbox" name="update" id="update" />Update a User's Information</label>
+        <label for="search"><input type="checkbox" name="search" id="search" />Search for a User</label>
+      </form>
+
+      <div id="resultscontainer">
+      </div>
     </div>
+
+    <div id="Books" class="tabcontent">
+      <h3>Books</h3>
+        <div id="searchcontainer">
+        <div class="box">
+          <div class="boxcontainer">
+            <span class="icon"><i class="fa fa-search"></i></span>
+              <input type="search" id="search" placeholder="Search..." />
+              <button id="button1">Clicks Me!</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="resultscontainer">
+      </div>
+    </div>
+
+    <div id="Loans" class="tabcontent">
+      <h3>Loans</h3>
+        <div id="searchcontainer">
+          <div class="box">
+            <div class="boxcontainer">
+              <span class="icon"><i class="fa fa-search"></i></span>
+                <input type="search" id="search" placeholder="Search..." />
+                <button id="button1">Clicks Me!</button>
+              </div>
+            </div>
+          </div>
+
+          <div id="resultscontainer">
+          </div>
+    </div>
+
+<!-- This is the search box -->
+
 
     <div class="footer">
       <a href="#default" class="logo">PontyBridge University</a>
