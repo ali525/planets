@@ -1,0 +1,25 @@
+const encodeParameters = function(params) {
+    var strArray = [];
+    Object.keys(params).forEach(function(key) {
+        var paramString = encodeURIComponent(key) + "=" + encodeURIComponent(params[key]);
+        strArray.push(paramString);
+    });
+    return strArray.join("&");
+};
+
+let addButton = document.getElementById("submitbutton");
+addButton.addEventListener("click", function (){
+  var userUpdate = document.getElementById("username");
+  var idUpdate = document.getElementById("userid");
+  var memberUpdate = document.getElementById("membertype");
+  var formUpdate = {
+    "name": userUpdate.value,
+    "barcode": idUpdate.value,
+    "memberType" : memberUpdate.value
+}
+  let xhttp = new XMLHttpRequest();
+  xhttp.open('POST', "http://127.0.0.1:3000/users", true);
+  xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+  xhttp.send(encodeParameters(formUpdate));
+alert('User Added')
+})
