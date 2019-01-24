@@ -16,8 +16,7 @@ updateButton.addEventListener("click", function (){
     xhttp2.onload = function (event) {
       var bookID = JSON.parse(this.response);
       let xhttp3 = new XMLHttpRequest ();
-      for (let i = 0; i !== bookID["UserID"]; i++) {
-            let query2URL = 'http://127.0.0.1:3000/loans/' + bookID[0].id;
+      let query2URL = 'http://127.0.0.1:3000/loans/' + bookID[0].id;
       xhttp3.open("GET", query2URL);
       xhttp3.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
       xhttp3.onload = function (event) {
@@ -39,3 +38,21 @@ updateButton.addEventListener("click", function (){
 
         }
       }
+
+
+  //    xhttp3.onload = function (event) {
+    //    let bookTitle = JSON.parse(this.response);
+    //    let xhttp4 = new XMLHttpRequest ();
+      //  let query3URL = 'http://127.0.0.1:3000/books' + bookTitle[0].title;
+  //      xhttp4.open("GET", query3URL);
+
+        xhttp4.send();
+      }
+  }
+       xhttp3.send();
+    }
+    xhttp2.send();
+    }
+    xhttp.send();
+
+  });
