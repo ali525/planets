@@ -1,0 +1,30 @@
+// b1
+
+const encodeParameters = function(params) {
+    var strArray = [];
+    Object.keys(params).forEach(function(key) {
+        var paramString = encodeURIComponent(key) + "=" + encodeURIComponent(params[key]);
+        strArray.push(paramString);
+    });
+    return strArray.join("&");
+};
+
+let addButton = document.getElementById("submitbutton");
+addButton.addEventListener("click", function (){
+  var authorAdd = document.getElementById("name");
+  var numberAdd = document.getElementById("id");
+  var titleAdd = document.getElementById("title");
+  var formUpdate = {
+    "name": authorAdd.value,
+    "isbn": numberAdd.value,
+    "title" : titleAdd.value
+}
+  let xhttp = new XMLHttpRequest();
+  xhttp.open('POST', "http://127.0.0.1:3000/books", true);
+  xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+  xhttp.send(encodeParameters(formUpdate));
+alert('Book Added')
+})
+
+
+//need to add for loop to see if author exists
