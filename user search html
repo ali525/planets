@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang= "en">
+   <head>
+     <title> Pontybridge University Webpage </title>
+     <link rel= "stylesheet" href="css/style.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta charset="utf-8">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quattrocento">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quattrocento+Sans">
+  </head>
+<body>
+  <div id="parent">
+<!-- This is my header which can be viewed on a desktop and when width is greater than 600px.
+I referred to this page https://www.w3schools.com/howto/howto_css_responsive_header.asp -->
+    <div class="header">
+      <a href="webpage2.html" class="logo" >PontyBridge University</a>
+      <div class="header-right">
+        <a>Library Services</a>
+      </div>
+    </div>
+
+    <div id="searchcontainer">
+    <div class="box">
+      <div class="boxcontainer">
+        <span class="icon"><i class="fa fa-search"></i></span>
+          <input type="search" id="search" placeholder="Search..." />
+          <button id="button1">Search for User</button>
+          <button id="button2">Search for Barcode</button>
+      </div>
+    </div>
+
+    <div id="resultscontainer">
+    </div>
+  </div>
+
+  <div class="footer">
+    <a href="webpage2.html" class="logo">PontyBridge University</a>
+    <div class="footer-left">
+      <a>Library Services</a>
+    </div>
+  </div>
+
+  </div>
+<script src="userSearchScript.js"></script>
+</body>
