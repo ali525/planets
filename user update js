@@ -1,0 +1,33 @@
+const encodeParameters = function(params) {
+    var strArray = [];
+    Object.keys(params).forEach(function(key) {
+        var paramString = encodeURIComponent(key) + "=" + encodeURIComponent(params[key]);
+        strArray.push(paramString);
+    });
+    return strArray.join("&");
+};
+//only need that for post and put
+
+// this is updating the user information
+
+    let updateButton = document.getElementById("submitbutton");
+    updateButton.addEventListener("click", function (){
+      var userUpdate = document.getElementById("username");
+      var idUpdate = document.getElementById("userid");
+      var memberUpdate = document.getElementById("membertype");
+      let xhttp2 = new XMLHttpRequest();
+      xhttp2.open("GET", "http://127.0.0.1:3000/users/" + idUpdate.value);
+      xhttp2.onload = function (event) {
+        var userBarcode = JSON.parse(this.response);
+        var formUpdate = {
+          "name": userUpdate.value,
+          "barcode": userBarcode["barcode"],
+          "memberType" : memberUpdate.value
+      };
+      let xhttp = new XMLHttpRequest();
+      xhttp.open("PUT", "http://127.0.0.1:3000/users/" + idUpdate.value);
+      xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+      xhttp.send(encodeParameters(formUpdate));
+      }
+    xhttp2.send();
+  });
