@@ -1,0 +1,27 @@
+//U2
+
+let updateButton = document.getElementById("button1");
+updateButton.addEventListener("click", function (){
+  let search_term = document.getElementById("search").value;
+  let xhttp = new XMLHttpRequest();
+  xhttp.open("GET", "http://127.0.0.1:3000/search?type=user&name=" + search_term);
+  xhttp.send();
+  xhttp.onload = function (event) {
+    var userSearch = JSON.parse(this.response);
+    document.getElementById("resultscontainer").innerHTML = userSearch[0]["name"] + " is a " + userSearch[0]["memberType"] + " and user's barcode is " + userSearch[0]["barcode"] + " and the ID is " + userSearch[0]["id"]
+  }
+});
+
+
+let updateButton2 = document.getElementById("button2");
+updateButton2.addEventListener("click", function (){
+  let search_term = document.getElementById("search").value;
+  let xhttp = new XMLHttpRequest();
+  xhttp.open("GET", "http://127.0.0.1:3000/search?type=user&barcode=" + search_term);
+  xhttp.send();
+  xhttp.onload = function (event) {
+    var userSearch = JSON.parse(this.response);
+    document.getElementById("resultscontainer").innerHTML = userSearch[0]["name"] + " is a " + userSearch[0]["memberType"] + " and user's barcode is " + userSearch[0]["barcode"] + " and the ID is " + userSearch[0]["id"]
+  }
+  
+});
