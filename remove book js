@@ -1,0 +1,8 @@
+let authorSearchButton = document.getElementById("button1");
+authorSearchButton.addEventListener("click", function (){
+  let search_term = document.getElementById("search").value;
+  let xhttp2 = new XMLHttpRequest();
+  xhttp2.open("DELETE", "http://127.0.0.1:3000/books/" + "bookID");
+  xhttp2.send();
+  alert("Book Removed")
+});
