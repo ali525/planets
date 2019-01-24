@@ -13,84 +13,54 @@
 <!-- This is my header which can be viewed on a desktop and when width is greater than 600px.
 I referred to this page https://www.w3schools.com/howto/howto_css_responsive_header.asp -->
     <div class="header">
-      <a href="#default" class="logo">PontyBridge University</a>
+      <a href="webpage2.html" class="logo">PontyBridge University</a>
       <div class="header-right">
         <a>Library Services</a>
       </div>
     </div>
 
     <div class="tab">
-      <button class="tablinks" onclick="openCity(event, 'Users')">Users</button>
-      <button class="tablinks" onclick="openCity(event, 'Books')">Books</button>
-      <button class="tablinks" onclick="openCity(event, 'Loans')">Loans</button>
+      <button class="tablinks" onclick="openTab(event, 'Users')">Users</button>
+      <button class="tablinks" onclick="openTab(event, 'Books')">Books</button>
+      <button class="tablinks" onclick="openTab(event, 'Loans')">Loans</button>
     </div>
 
     <!-- Tab content -->
     <div id="Users" class="tabcontent">
       <h3>Users</h3>
-      <div id="searchcontainer">
-        <div class="box">
-          <div class="boxcontainer">
-            <span class="icon"><i class="fa fa-search"></i></span>
-              <input type="search" id="search" placeholder="Search..." />
-              <button id="button1">Clicks Me!</button>
-          </div>
-        </div>
-      </div>
-
-      <form>
-        <label for="add"><input type="checkbox" name="add" id="add" />Add a User</label><br />
-        <label for="delete"><input type="checkbox" name="delete" id="delete" />Remove a User</label>
-        <label for="update"><input type="checkbox" name="update" id="update" />Update a User's Information</label>
-        <label for="search"><input type="checkbox" name="search" id="search" />Search for a User</label>
-      </form>
-
-      <div id="resultscontainer">
+      <div id="formbox">
+        <a href="user_add.html">Add a User</a><br />
+        <a href="remove_user.html">Remove a User</a><br  />
+        <a href="user_updateform.html">Update a User's Information</a><br  />
+        <a href="user_search.html">Search for a User</a>
       </div>
     </div>
 
     <div id="Books" class="tabcontent">
       <h3>Books</h3>
-        <div id="searchcontainer">
-        <div class="box">
-          <div class="boxcontainer">
-            <span class="icon"><i class="fa fa-search"></i></span>
-              <input type="search" id="search" placeholder="Search..." />
-              <button id="button1">Clicks Me!</button>
-          </div>
-        </div>
-      </div>
-
-      <div id="resultscontainer">
+      <div id="formbox">
+        <a href= "book_add.html">Add a Book to Library System</a><br />
+        <a href= "remove_book.html">Remove a Book</a><br  />
+        <a href="book_search.html">Search for a Book</a>
       </div>
     </div>
 
     <div id="Loans" class="tabcontent">
       <h3>Loans</h3>
-        <div id="searchcontainer">
-          <div class="box">
-            <div class="boxcontainer">
-              <span class="icon"><i class="fa fa-search"></i></span>
-                <input type="search" id="search" placeholder="Search..." />
-                <button id="button1">Clicks Me!</button>
-              </div>
-            </div>
-          </div>
-
-          <div id="resultscontainer">
-          </div>
+      <div id="formbox">
+        <a href="loan_book.html">Loan to a User</a><br />
+        <a href = "user_loans.html">User's Current Loans</a><br  />
+        <a href="user_updateform.html">Loan Information</a><br  />
+      </div>
     </div>
 
-<!-- This is the search box -->
-
-
     <div class="footer">
-      <a href="#default" class="logo">PontyBridge University</a>
+      <a href="webpage2.html" class="logo">PontyBridge University</a>
       <div class="footer-left">
         <a>Library Services</a>
       </div>
     </div>
 
-  </div>
+    </div>
   <script src="myScript.js"></script>
 </body>
