@@ -1,0 +1,236 @@
+.header {
+  overflow: hidden;
+  background-color: #82cdcf;
+  padding: 20px 10px;
+}
+.footer{
+  overflow: hidden;
+  background-color: #82cdcf;
+  padding: 20px 10px;
+}
+.footer a {
+  float: right;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 26px;
+  line-height: 25px;
+  border-radius: 4px;
+  font-family: 'Great Vibes', cursive;
+}
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 26px;
+  line-height: 25px;
+  border-radius: 4px;
+  font-family: 'Great Vibes', cursive;
+}
+.header a.logo {
+  font-size: 45px;
+  font-family: 'Great Vibes', cursive;
+  ;
+}
+.footer a.logo {
+  font-size: 45px;
+  font-family: 'Great Vibes', cursive;
+}
+.header a.active {
+  background-color: #9A55B2;
+  color: white;
+  font-family: 'Great Vibes', cursive;
+}
+.footer a.active {
+  background-color: #9A55B2;
+  color: white;
+  font-family: 'Great Vibes', cursive;
+}
+.header-right {
+  float: right;
+  font-family: 'Great Vibes', cursive;
+}
+.footer-left {
+  float: left;
+  font-family: 'Great Vibes', cursive;
+}
+
+
+
+
+div .homepage .homepage {
+  width: 100%;
+  height: auto;
+}
+div .homepage p {
+  text-align: center;
+  flex-direction: column;
+}
+div .pageDetails {
+  vertical-align: top;
+  display: inline-block;
+  text-align: center;
+}
+div .pageDetails h2, h3, h4 {
+  text-align: right;
+}
+
+
+
+
+/* this is css for the search box -- I referred to this site: https://webdesign.tutsplus.com/tutorials/css-experiments-with-a-search-form-input-and-button--cms-22069*/
+
+.box{
+  margin: 100px auto;
+  width: 300px;
+  height: 50px;
+}
+
+.boxcontainer{
+  width: 300px;
+  vertical-align: middle;
+  white-space: nowrap;
+  position: relative;
+}
+
+.boxcontainer input#search{
+  width: 300px;
+  height: 50px;
+  background: #A993ff;
+  border: none;
+  font-size: 10pt;
+  float: left;
+  color: #63717f;
+  padding-left: 45px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+
+-webkit-transition: background .55s ease;
+-moz-transition: background .55s ease;
+-ms-transition: background .55s ease;
+-o-transition: background .55s ease;
+transition: background .55s ease;
+}
+
+.boxcontainer input#search::-webkit-input-placeholder {
+   color: #65737e;
+}
+
+.boxcontainer input#search:-moz-placeholder { /* Firefox 18- */
+   color: #65737e;
+}
+
+.boxcontainer input#search::-moz-placeholder {  /* Firefox 19+ */
+   color: #65737e;
+}
+
+.boxcontainer input#search:-ms-input-placeholder {
+   color: #65737e;
+}
+
+.boxcontainer .icon{
+  position: absolute;
+  top: 50%;
+  margin-left: 17px;
+  margin-top: 17px;
+  z-index: 1;
+  color: #4f5b66;
+}
+
+.boxcontainer input#search:hover, .boxcontainer input#search:focus, .boxcontainer input#search:active{
+    outline:none;
+    background: #ffffff;
+  }
+
+
+  /* Style the tab */
+  .tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+  }
+
+  /* Style the buttons that are used to open the tab content */
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+  }
+
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: #ddd;
+  }
+
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: #ccc;
+  }
+
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+  }
+
+
+label {
+ border:1px solid #ccc;
+ padding: 10px;
+ margin:0 0 10px;
+ display:block;
+}
+
+label:hover {
+ background:#eee;
+ cursor:pointer;
+}
+
+/* I used the same format for this as my box container  */
+
+.userform {
+  width: 300px;
+  height: 50px;
+  background: #A993ff;
+  border: none;
+  font-size: 10pt;
+  float: left;
+  color: #63717f;
+  padding-left: 45px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+h3 {
+  font-family: 'Quattrocento', serif;
+  font-size: 1.8em;
+}
+
+div#formbox a {
+  font-family: 'Quattrocento', serif;
+  font-size: 1.0em;
+}
+
+div .pageDetails {
+  display: table;
+  padding: 15px;
+  boarder-width: .5em;
+  border: solid black;
+}
+
+div .mobilityCalc .mobilitypic {
+  width: 33%;
+  height: auto;
+  margin-bottom: 50px;
+}
