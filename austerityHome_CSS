@@ -1,11 +1,11 @@
 .header {
   overflow: hidden;
-  background-color: #82cdcf;
+  background-image: linear-gradient(#f4d3eb, #009b9e);
   padding: 20px 10px;
 }
 .footer{
   overflow: hidden;
-  background-color: #82cdcf;
+  background-image: linear-gradient(#f4d3eb, #009b9e);
   padding: 20px 10px;
 }
 .footer a {
@@ -17,7 +17,7 @@
   font-size: 26px;
   line-height: 25px;
   border-radius: 4px;
-  font-family: 'Great Vibes', cursive;
+  font-family: 'ZCOOL XiaoWei', serif;
 }
 .header a {
   float: left;
@@ -28,123 +28,67 @@
   font-size: 26px;
   line-height: 25px;
   border-radius: 4px;
-  font-family: 'Great Vibes', cursive;
+  font-family: 'ZCOOL XiaoWei', serif;
 }
 .header a.logo {
   font-size: 45px;
-  font-family: 'Great Vibes', cursive;
+  font-family: 'ZCOOL XiaoWei', serif;
   ;
 }
 .footer a.logo {
   font-size: 45px;
-  font-family: 'Great Vibes', cursive;
+  font-family: 'ZCOOL XiaoWei', serif;
 }
 .header a.active {
   background-color: #9A55B2;
   color: white;
-  font-family: 'Great Vibes', cursive;
+  font-family: 'ZCOOL XiaoWei', serif;
 }
 .footer a.active {
   background-color: #9A55B2;
   color: white;
-  font-family: 'Great Vibes', cursive;
+  font-family: 'ZCOOL XiaoWei', serif;
 }
 .header-right {
   float: right;
-  font-family: 'Great Vibes', cursive;
+font-family: 'ZCOOL XiaoWei', serif;
 }
 .footer-left {
   float: left;
   font-family: 'Great Vibes', cursive;
 }
 
-
-
-
-div .homepage .homepage {
-  width: 100%;
-  height: auto;
-}
-div .homepage p {
-  text-align: center;
-  flex-direction: column;
-}
 div .pageDetails {
   vertical-align: top;
   display: inline-block;
   text-align: center;
+  background-color: #ccc;
 }
-div .pageDetails h2, h3, h4 {
+div .pageDetails h3, h4 {
   text-align: right;
 }
 
+div .pageDetails h2 {
+  text-align: center;
+}
 
 
+/*
+div .aboutArticle {
+  display: table;
+  padding: 15px;
+  border-width: .5em;
+}
 
+div .aboutVideo {
+  display: table;
+  padding: 15px;
+  border-width: .5em;
+}
+/*
 /* this is css for the search box -- I referred to this site: https://webdesign.tutsplus.com/tutorials/css-experiments-with-a-search-form-input-and-button--cms-22069*/
 
-.box{
-  margin: 100px auto;
-  width: 300px;
-  height: 50px;
-}
 
-.boxcontainer{
-  width: 300px;
-  vertical-align: middle;
-  white-space: nowrap;
-  position: relative;
-}
-
-.boxcontainer input#search{
-  width: 300px;
-  height: 50px;
-  background: #A993ff;
-  border: none;
-  font-size: 10pt;
-  float: left;
-  color: #63717f;
-  padding-left: 45px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-
--webkit-transition: background .55s ease;
--moz-transition: background .55s ease;
--ms-transition: background .55s ease;
--o-transition: background .55s ease;
-transition: background .55s ease;
-}
-
-.boxcontainer input#search::-webkit-input-placeholder {
-   color: #65737e;
-}
-
-.boxcontainer input#search:-moz-placeholder { /* Firefox 18- */
-   color: #65737e;
-}
-
-.boxcontainer input#search::-moz-placeholder {  /* Firefox 19+ */
-   color: #65737e;
-}
-
-.boxcontainer input#search:-ms-input-placeholder {
-   color: #65737e;
-}
-
-.boxcontainer .icon{
-  position: absolute;
-  top: 50%;
-  margin-left: 17px;
-  margin-top: 17px;
-  z-index: 1;
-  color: #4f5b66;
-}
-
-.boxcontainer input#search:hover, .boxcontainer input#search:focus, .boxcontainer input#search:active{
-    outline:none;
-    background: #ffffff;
-  }
 
 
   /* Style the tab */
@@ -197,7 +141,7 @@ label:hover {
 }
 
 /* I used the same format for this as my box container  */
-
+/*
 .userform {
   width: 300px;
   height: 50px;
@@ -221,16 +165,336 @@ div#formbox a {
   font-family: 'Quattrocento', serif;
   font-size: 1.0em;
 }
+*/
 
-div .pageDetails {
+div .storiesOne {
   display: table;
   padding: 15px;
-  boarder-width: .5em;
+  border-width: .5em;
   border: solid black;
+}
+
+div .infoDiv {
+  background-color: #ccc;
+}
+
+div .aboutArticle {
+  display: table;
+  padding: 15px;
+  border-width: .5em;
+}
+
+div .aboutArticle h2 {
+  font-size: 2em;
+  font-family: 'Quattrocento', serif;
+}
+
+div .aboutVideo {
+  display: table;
+  background-color: #ccc;
+  padding: 15px;
+  border-width: .5em;
+}
+
+div .aboutVideo .videoOne {
+  margin-bottom: 50px;
+}
+
+div .aboutArticle .mobilitypic {
+  width: 33%;
+  height: auto;
+  margin-bottom: 50px;
+}
+
+div .aboutVideo h3 {
+  align: left;
+  font-size: 2em;
+  font-family: 'Quattrocento', serif;
+}
+
+div .aboutVideo p {
+  font-size: 1.4em;
+  font-family: 'Quattrocento', serif;
+}
+
+div .aboutParagraph h1 {
+  font-size: 2em;
+  font-family: 'Quattrocento', serif;
+}
+
+div .aboutParagraph p {
+  font-size: 1.4em;
+  font-family: 'Quattrocento', serif;
+}
+
+div .pageDetails h2 {
+  font-size: 2em;
+  font-family: 'Quattrocento', serif;
+}
+
+div .aboutArticle h2 {
+  font-size: 2em;
+  font-family: 'Quattrocento', serif;
+}
+
+div .aboutArticle p {
+  font-size: 1.4em;
+  font-family: 'Quattrocento', serif;
 }
 
 div .mobilityCalc .mobilitypic {
   width: 33%;
   height: auto;
   margin-bottom: 50px;
+}
+
+div .details {
+  display: none;
+}
+
+/*
+.row {
+  display: flex;
+  margin-top: 20px;
+  font-family: 'ZCOOL XiaoWei', serif;
+}
+.column {
+  flex: 50%;
+  padding-left: 5px;
+  font-family: 'ZCOOL XiaoWei', serif;
+  margin-bottom: 15px;
+} /* */
+
+.storyCaption {
+  text-align: center;
+  margin-top: 4px;
+  font-size: 1.5em;
+  word-break: break-all;
+  color: blue;
+  font-family: 'ZCOOL XiaoWei', serif;
+}
+
+div .stories {
+    width: 100%;
+    height: 33.333%;
+    border-right: none;
+    position: static;
+  }
+
+.storiessub {
+  position: fixed;
+  font-size: 1em;
+  bottom:200px;
+  margin-left: 15px;
+}
+.storiessub_bottom {
+  position: fixed;
+  font-size: 1em;
+  bottom: 180px;
+  margin-left: 15px;
+}
+
+.stories {
+  flex: 33.333%;
+  padding-left: 5px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.caption {
+  text-align:center;
+  margin-top:4px;
+  font-size: 1.8em;
+  font-family: 'ZCOOL XiaoWei', serif;
+  color: black;
+}
+
+#imageContainer {
+  width: 80%;
+  height: 80%;
+  position: absolute;
+ margin:auto;
+ top:0;
+ bottom:0;
+ left:0;
+ right:0;
+ position: relative;
+ padding-top: 25px;
+}
+
+div .background {
+  background-color: #ccc;
+  overflow: hidden;
+  left: 0;
+  right:0;
+}
+
+
+
+/*
+#cityHall {
+  position: relative;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+   }
+
+#maintext {
+  position: absolute;
+  top: 90px;
+  left: 140px;
+  font-size: 2em;
+  font-style: oblique;
+  color: white;
+  z-index: 10;
+}
+/* */
+
+
+
+.topStoriesub {
+  position: fixed;
+  font-size: 1em;
+  bottom:200px;
+  margin-left: 15px;
+}
+.topStoriessub_bottom {
+  position: fixed;
+  font-size: 1em;
+  bottom: 180px;
+  margin-left: 15px;
+}
+.headlines p {
+  position:relative;
+  text-align: left;
+  font-size: 1em;
+  bottom: 200px;
+  margin-left: 50px;
+  word-break: break-all;
+  word-wrap: break-word;
+  font-family: 'Quattrocento Sans', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.caption {
+  text-align:center;
+  margin-top:4px;
+  font-size: 1.8em;
+  font-family: 'Quattrocento Sans', sans-serif;
+}
+
+.newsCaption {
+  text-align: center;
+  margin-top: 4px;
+  font-size: 1.5em;
+  word-break: break-all;
+  font-family: 'Quattrocento Sans', sans-serif;
+}
+
+.headlinePics {
+  margin-right: 70px;
+  margin-bottom: 5px;
+  padding: 20px;
+  display: table-row;
+  margin-top: 30px;
+}
+
+#chartPic {
+  margin-top: 30px;
+  margin-right:70px;
+  margin-bottom: 5px;
+  padding: 20px;
+  display: table-row;
+}
+
+/* The study/research and news sections were created based off of each other so I wrote the style one on top of the other
+so I could refer to what I did for one */
+
+.row {
+  display: flex;
+  margin-top: 60px;
+  font-family: 'ZCOOL XiaoWei', serif;
+}
+
+.column {
+  flex: 50%;
+  padding-left: 5px;
+  font-family: 'ZCOOL XiaoWei', serif;
+}
+
+.topStories {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.headline {
+  flex: 33.333%;
+  padding-left: 5px;
+}
+
+#welshFlag {
+  vertical-align: middle;
+  display: table-cell;
+  padding-right: 20px;
+  padding-left: 5px;
+  position: relative;
+  margin-top: 0;
+  height: auto;
+  width: auto;
+}
+
+#quote {
+  display:table-cell;
+  background-color: #888888;
+  font-size: 1em;
+  font-family: 'ZCOOL XiaoWei', serif;
+  width: 100%;
+  height: 70px;
+  padding: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 0 auto;
+  position: absolute;
+  right:0;
+  left:0;
+  overflow:hidden;
+}
+p2 {
+  vertical-align: middle;
+  display: table-cell;
+  font-size: 1.3em;
+  font-family: 'ZCOOL XiaoWei', serif;
+}
+
+.lucas1 {
+  flex: 50%;
+  padding-left: 5px;
+  display: flex;
+  margin-top: 3em;
+  margin: 3em;
+}
+
+.writing1 {
+  border: 1px;
+  border-style: solid;
+  border-color: black;
+  margin: 1em;
+}
+
+h {
+  font-size: 1.8em;
+  font-family: 'ZCOOL XiaoWei', serif;
+}
+
+p {
+  font-size: 1.1em;
+  font-family: 'ZCOOL XiaoWei', serif;
+  text-align: left;
 }
