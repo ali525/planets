@@ -1,0 +1,7 @@
+function openTab (page) {
+  d3.selectAll(".details")
+    .style("display", "none")
+
+  d3.select('#'+ page)
+    .style('display', 'block')
+}
