@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang= "en">
+   <head>
+     <title> Effects of Austerity </title>
+     <link rel= "stylesheet" href="style/style.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta charset="utf-8">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quattrocento">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quattrocento+Sans">
+     <link rel = "stylesheet" href="https://fonts.googleapis.com/css?family=Great+Vibes">
+     <link rel = "stylesheet" href="https://fonts.googleapis.com/css?family=ZCOOL+XiaoWei">
+     <script src="https://d3js.org/d3.v4.min.js" charset="utf-8"></script>
+  </head>
+<body>
+  <div id="parent">
+
+  <div class="header">
+    <a class= "logo">Austerity Impact</a>
+    <div class="header-right">
+      <a>The impact of austerity spending on school-aged children</a>
+    </div>
+  </div>
+
+  <div class="tab">
+    <button onclick="openTab('history')">History</button>
+    <button onclick="openTab('teachers')">Education Impact</button>
+    <button onclick="openTab('parents')">Family Impact</button>
+    <button onclick="openTab('data')">Data and Methodology</button>
+  </div>
+
+<div class="background">
+  <div class=lucas1>
+    <iframe width="100%" height="520" frameborder="0" src="https://lucasmarches.carto.com/builder/6235feca-0949-4baf-8bba-3e3e6479937d/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+    <iframe width="100%" height="520" frameborder="0" src="https://lucasmarches.carto.com/builder/6235feca-0949-4baf-8bba-3e3e6479937d/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+  </div>
+
+  <div class=lucas2>
+    <iframe width="100%" height="520" frameborder="0" src="https://lucasmarches.carto.com/builder/6235feca-0949-4baf-8bba-3e3e6479937d/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+  </div>
+
+  <div class=writing1>
+    <h>The History of Austerity</h>
+    <p>School children in navy sweaters file out of a building in South Wales, meeting their parents on the pavement where they start to excitedly discuss what they learned that day.</p>
+    <p>Students in this school and hundreds of others around the United Kingdom are growing up under the age of austerity.</p>
+    <p>The U.K. government has operated under a constricted budget since 2010 after George Osborne, the former chancellor of the Exchequer, introduced more than 40bn package filled with tax increases, welfare cuts, and Whitehall spending restraint aimed at supplementing the government’s budget deficit.</p>
+    <p>“It pays for the past. And it plans for the future,” said Osborne during his 2010 budget statement he delivered to the House of Commons. “It supports a strong enterprise-led recovery. It rewards work. And it protects the most vulnerable in our society.”</p>
+    <p>While the U.K. economy has grown for nine consecutive years under austerity spending, those who are living under it says it comes at a cost – and it’s the very people Osborne said it would protect.</p>
+    <p>“It’s vulnerable people and marginalized people that mostly get hurt,” said Mary O’Hara, the author of ‘Austerity Bites.’  “They’re always the people who mostly get hurt and for some reason we find that acceptable as a society.”</p>
+    <p>The government has reduced funding to several social welfare programs over the last nine years as schools have seen the number of students who qualify for school lunches increase during that same time frame.</p>
+    <p>“It was made out to be sort of a necessity but in actual fact, it was a choice to cut spending as quickly as they did,” said Guto Ifan, a Wales Governance Centre research assistant who analyzes austerity’s impact on local funding.</p>
+  </div>
+
+
+  <div class="footer">
+    <a href="austerityImpact.html" class="logo">Austerity Impact</a>
+    <div class="footer-left">
+      <a>The impact of austerity spending on school-aged children</a>
+    </div>
+  </div>
+
+  </div>
+<script src="myScript.js"></script>
+</body>
