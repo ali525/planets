@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang= "en">
+   <head>
+     <title> Effects of Austerity </title>
+     <link rel= "stylesheet" href="style/style.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta charset="utf-8">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quattrocento">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quattrocento+Sans">
+     <link rel = "stylesheet" href="https://fonts.googleapis.com/css?family=Great+Vibes">
+     <link rel = "stylesheet" href="https://fonts.googleapis.com/css?family=ZCOOL+XiaoWei">
+     <script src="https://d3js.org/d3.v4.min.js" charset="utf-8"></script>
+  </head>
+<body>
+  <div id="parent">
+
+  <div class="header">
+    <a class= "logo">Austerity Impact</a>
+    <div class="header-right">
+      <a>The impact of austerity spending on school-aged children</a>
+    </div>
+  </div>
+
+  <div class="tab">
+    <button onclick="openTab('history')">History</button>
+    <button onclick="openTab('teachers')">Education Impact</button>
+    <button onclick="openTab('parents')">Family Impact</button>
+    <button onclick="openTab('data')">Data and Methodology</button>
+  </div>
+
+  <div class="background">
+  <div class="topStories">
+
+  <!-- I liked the idea of the news being written on a notebook when it was on a desktop
+  but it looked boring in mobile view so I looked up how to change out the picture when there is a
+  media query so it's more interesting. -->
+
+        <div class="headline">
+          <picture class="headlinePics">
+            <source media="(min-width: 600px)" srcset="style/Cardiff2.jpg">
+          <img src="style/Cardiff2.jpg"
+            alt="The impact of austerity spending"
+            title="Cardiff City Hall"
+            width="100%">
+          </picture>
+          <div class="newsCaption">History of Austerity Spending</div>
+        </div>
+      <div class="headline">
+        <picture id="chartPic">
+          <source media="(min-width: 600px)" srcset="style/chart1.png">
+          <img src="style/chart1.png"
+              alt="Charting how austerity spending cuts impact different areas"
+              title="Austerity spending cuts impact many sectors in education"
+              width="100%">
+        </picture>
+        <div class="newsCaption">Follow the impact</div>
+        </div>
+      <div class="headline">
+        <picture class="headlinePics">
+          <source media="(min-width: 600px)" srcset="style/teacher1.jpg">
+          <img src="style/teacher1.jpg"
+              alt="Educators feel more pressure under austerity spending cuts"
+              title="Educators impacted"
+              width="100%">
+        </picture>
+        <div class="newsCaption">Educator impacts</div>
+        </div>
+      </div>
+
+      <div id="quote">
+        <p2>"The education system has been mopping up some of the problems that have been caused by other austerity cuts" - Mary O'Hara</p2>
+      </div>
+
+  <div class="row">
+   <div class="column">
+      <img class="dad"
+      src="style/dad1.jpg"
+      alt="Parents discuss impact of austerity"
+      title="Parents"
+      width="100%"/>
+      <div class="caption">Parents Discuss Impact</div>
+    </div>
+    <div class="column">
+      <iframe width="100%"
+      height="520"
+      frameborder="0"
+      src="https://lucasmarches.carto.com/builder/6235feca-0949-4baf-8bba-3e3e6479937d/embed"
+      allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+      <div class="caption">Regions impacted by austerity spending</div>
+  </div>
+</div>
+
+
+</div>
+
+
+
+  <div class="footer">
+    <a href="austerityImpact.html" class="logo">Austerity Impact</a>
+    <div class="footer-left">
+      <a>The impact of austerity spending on school-aged children</a>
+    </div>
+  </div>
+
+  </div>
+<script src="myScript.js"></script>
+</body>
