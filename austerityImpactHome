@@ -8,6 +8,8 @@
      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quattrocento">
      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quattrocento+Sans">
      <link rel = "stylesheet" href="https://fonts.googleapis.com/css?family=Great+Vibes">
+     <link rel = "stylesheet" href="https://fonts.googleapis.com/css?family=ZCOOL+XiaoWei">
+     <script src="https://d3js.org/d3.v4.min.js" charset="utf-8"></script>
   </head>
 <body>
   <div id="parent">
@@ -21,17 +23,17 @@ I referred to this page https://www.w3schools.com/howto/howto_css_responsive_hea
     </div>
 
     <div class="tab">
-      <button class="tablinks" onclick="openTab(event, 'About')">About</button>
-      <button class="tablinks" onclick="openTab(event, 'Teachers')">Education Impact</button>
-      <button class="tablinks" onclick="openTab(event, 'Parents')">Family Impact</button>
-      <button class="tablinks" onclick="openTab(event, 'Data')">Data and Methodology</button>
+      <button onclick="openTab('history')">History</button>
+      <button onclick="openTab('schools')">Schools</button>
+      <button onclick="openTab('teachers')">Education Impact</button>
+      <button onclick="openTab('parents')">Family Impact</button>
+      <button onclick="openTab('data')">Data and Methodology</button>
     </div>
 
     <!-- Tab content -->
 
   <div class= "pageDetails">
-
-    <div class="mobilityCalc">
+    <div id="history" class="details">
         <h2>Social Mobility Calculator</h2>
         <img class="mobilitypic"
       src="style/teslaGraphic.jpg"
@@ -41,7 +43,76 @@ I referred to this page https://www.w3schools.com/howto/howto_css_responsive_hea
         <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dignissim sapien lorem, ac sagittis mauris dignissim sed. Duis hendrerit sapien est, eu lobortis odio aliquam in. </p>
       </div>
 
+      <div id="parents" class="details">
+        <div class="aboutParagraph">
+          <h1>About Austerity</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dignissim sapien lorem, ac sagittis mauris dignissim sed. Duis hendrerit sapien est, eu lobortis odio aliquam in.</p>
+        </div>
+
+        <div class = "infoDiv">
+          <div class="aboutArticle">
+            <h2>First Article</h2>
+            <img class="mobilitypic"
+            src="style/teslaGraphic.jpg"
+            alt="Mobility chart"
+            title="Social mobility calculator"
+            style="float: left" />
+              <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dignissim sapien lorem, ac sagittis mauris dignissim sed. Duis hendrerit sapien est, eu lobortis odio aliquam in. </p>
+          </div>
+
+            <div class="aboutVideo">
+              <h3>About Video </h3>
+                <div class = "fontColumn">
+                  <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dignissim sapien lorem, ac sagittis mauris dignissim sed. Duis hendrerit sapien est, eu lobortis odio aliquam in.</p>
+                <div
+                <iframe class= "videoOne" style= "float: left" width="560" height="315" src="https://www.youtube.com/embed/fBTVp_yhAb8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="schools" class="details">
+          <div class="background">
+            <div class=lucas1>
+              <iframe width="100%" height="520" frameborder="0" src="https://lucasmarches.carto.com/builder/6235feca-0949-4baf-8bba-3e3e6479937d/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+              <iframe width="100%" height="520" frameborder="0" src="https://lucasmarches.carto.com/builder/6235feca-0949-4baf-8bba-3e3e6479937d/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+            </div>
+
+            <div class=lucas2>
+              <iframe width="100%" height="520" frameborder="0" src="https://lucasmarches.carto.com/builder/6235feca-0949-4baf-8bba-3e3e6479937d/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+            </div>
+
+            <div class=writing1>
+              <h>The History of Austerity</h>
+              <p>School children in navy sweaters file out of a building in South Wales, meeting their parents on the pavement where they start to excitedly discuss what they learned that day.</p>
+              <p>Students in this school and hundreds of others around the United Kingdom are growing up under the age of austerity.</p>
+              <p>The U.K. government has operated under a constricted budget since 2010 after George Osborne, the former chancellor of the Exchequer, introduced more than 40bn package filled with tax increases, welfare cuts, and Whitehall spending restraint aimed at supplementing the government’s budget deficit.</p>
+              <p>“It pays for the past. And it plans for the future,” said Osborne during his 2010 budget statement he delivered to the House of Commons. “It supports a strong enterprise-led recovery. It rewards work. And it protects the most vulnerable in our society.”</p>
+              <p>While the U.K. economy has grown for nine consecutive years under austerity spending, those who are living under it says it comes at a cost – and it’s the very people Osborne said it would protect.</p>
+              <p>“It’s vulnerable people and marginalized people that mostly get hurt,” said Mary O’Hara, the author of ‘Austerity Bites.’  “They’re always the people who mostly get hurt and for some reason we find that acceptable as a society.”</p>
+              <p>The government has reduced funding to several social welfare programs over the last nine years as schools have seen the number of students who qualify for school lunches increase during that same time frame.</p>
+              <p>“It was made out to be sort of a necessity but in actual fact, it was a choice to cut spending as quickly as they did,” said Guto Ifan, a Wales Governance Centre research assistant who analyzes austerity’s impact on local funding.</p>
+            </div>
+          </div>
+        </div>
+
+      <div id="teachers" class= "details">
+        <h2>Education Impact</h2>
+        <p>Impact on education is profound</p>
+      </div>
+
+      <div id='data' class="details">
+        <h2>Data and Methodology</h2>
+        <p>The data used in this investigation has two main sources: <a href="https://www.compare-school-performance.service.gov.uk/download-data"> the Department for Education</a> (DfE) when it comes to English schools and <a href="https://statswales.gov.wales/Catalogue/Local-Government/Finance/Revenue/Delegated-School-Budgets/delegatedschoolbudgets-by-school"> StatWales </a> for information about Wales. In both cases, the information was separated by school.</p>
+        <p>To measure the effects of austerity on spending per pupil per school in the two countries, the data was clustered in two periods: the 8 years of Austerity, starting with the first budget of David Cameron government (2010-2011) to the last Tory administration with available data (2017-2018).</p>
+        <p>The eight year period was compared to one timeframe with the same extension ending in 2009-2010 and starting in 2002-2003.</p>
+        <p>All values were adjusted by the inflation in the period according to the Office of National Statistics (ONS) of 58.48% (CPS).</p>
+        <p>An important methodology information regarding the spending per pupil by ethnicity is that masked data of the number of pupils of a specific ethnicity was replaced by 1 when required.</p>
+        <p>This happened because the DfE masks the number of pupils of a ethnicity in a school when there are only one or two of that ethnicity in the establishment. The same procedure was applied to Wales data.</p>
+      </div>
     </div>
+
 
 
     <div class="footer">
