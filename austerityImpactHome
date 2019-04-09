@@ -27,6 +27,7 @@ I referred to this page https://www.w3schools.com/howto/howto_css_responsive_hea
       <button onclick="openTab('schools')">Schools</button>
       <button onclick="openTab('teachers')">Education Impact</button>
       <button onclick="openTab('parents')">Family Impact</button>
+      <button onclick="openTab('localAuthority')">Local Authority</button>
       <button onclick="openTab('data')">Data and Methodology</button>
     </div>
 
@@ -70,6 +71,28 @@ I referred to this page https://www.w3schools.com/howto/howto_css_responsive_hea
               </div>
             </div>
           </div>
+        </div>
+
+        <div id="localAuthority" class="details">
+          <div class=writing1>
+            <h>Austerity in Local Authorities</h>
+            <p>Austerity does not have the same impact everywhere. Do you want to know how the impact of cuts in schol budgets affected a particular area? Check it out here.</p>
+          </div>
+
+        <div class="background">
+
+          <div class=lucas2>
+            <iframe width="100%" height="520" frameborder="0" src="https://lucasmarches.carto.com/builder/6235feca-0949-4baf-8bba-3e3e6479937d/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+          </div>
+
+          <div class=lucas1>
+            <iframe width="80%" height="520" frameborder="0" src="divergingbar.html" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+          </div>
+
+          <div class=lucas1>
+            <iframe width="80%" height="720" frameborder="0" src="lineGraph.html" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+          </div>
+
         </div>
 
         <div id="schools" class="details">
