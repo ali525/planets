@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang= "en">
+   <head>
+     <title> Effects of Austerity </title>
+     <link rel= "stylesheet" href="style/style.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta charset="utf-8">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quattrocento">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quattrocento+Sans">
+     <link rel = "stylesheet" href="https://fonts.googleapis.com/css?family=Great+Vibes">
+     <link rel = "stylesheet" href="https://fonts.googleapis.com/css?family=ZCOOL+XiaoWei">
+     <script src="https://d3js.org/d3.v4.min.js" charset="utf-8"></script>
+  </head>
+<body>
+  <div id="parent">
+
+  <div class="header">
+    <a class= "logo">Austerity Impact</a>
+    <div class="header-right">
+      <a>The impact of austerity spending on school-aged children</a>
+    </div>
+  </div>
+
+  <div class="tab">
+    <button onclick="openTab('history')">History</button>
+    <button onclick="openTab('teachers')">Education Impact</button>
+    <button onclick="openTab('parents')">Family Impact</button>
+    <button onclick="openTab('data')">Data and Methodology</button>
+  </div>
+
+  <div class="timeline">
+    <div class="container left">
+      <div class="content">
+        <h6>Austerity's History</h6>
+        <p>The U.K. government has operated under a constricted budget since 2010 after George Osborne, the former chancellor of the Exchequer, introduced more than £40bn package filled with tax increases, welfare cuts, and Whitehall spending restraint aimed at supplementing the government’s budget deficit.</p>
+      </div>
+    </div>
+    <div class="container right">
+      <div class="content">
+        <h6>Spending on Education</h6>
+        <p>In Wales, spending per pupil has dropped by £602 in real terms. In England, spending decreased £474.14 per pupil.</p>
+      </div>
+    </div>
+    <div class="container left">
+      <div class="content">
+        <h6>Teachers feeling the Impact</h6>
+        <p>Teachers are getting together, fundraising for classroom materials. They say the schools have a quota for the year and when the limit is reached, they chip in to pick up the shortfall to avoid disruption in the classroom.</p>
+      </div>
+    </div>
+    <div class="container right">
+      <div class="content">
+        <h6>Students and communities affected</h6>
+        <p>“They have ripped a huge hole in the social fabric of society, in the local government, in the benefit system. They have ripped the heart of communities by cutting services,” says a researcher about austerity's impact.</p>
+      </div>
+    </div>
+    <div class="container left">
+      <div class="content">
+        <h6>Long term fallout anticipated</h6>
+        <p>"There’s certainly a growing income disparities and that will almost certainly lead to a decline in social mobility."</p>
+      </div>
+    </div>
+  </div>
+
+ <div class="buttonToLanding">
+   <input id="button" type="button" onclick="austerityLanding.html" value="Continue to Site"/>
+</div>
+
+
+<div class="footer">
+  <a href="austerityImpact.html" class="logo">Austerity Impact</a>
+  <div class="footer-left">
+    <a>The impact of austerity spending on school-aged children</a>
+  </div>
+</div>
+
+</div>
+<script src="myScript.js"></script>
+</body>
