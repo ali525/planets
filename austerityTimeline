@@ -22,9 +22,12 @@
   </div>
 
   <div class="tab">
-    <button onclick="openTab('history')">History</button>
+    <button onclick="openTab('landing')">Home</button>
+    <button onclick="openTab('history')">Background</button>
+    <button onclick="openTab('schools')">Schools</button>
     <button onclick="openTab('teachers')">Education Impact</button>
     <button onclick="openTab('parents')">Family Impact</button>
+    <button onclick="openTab('localAuthority')">Local Authority</button>
     <button onclick="openTab('data')">Data and Methodology</button>
   </div>
 
@@ -62,7 +65,9 @@
   </div>
 
  <div class="buttonToLanding">
-   <input id="button" type="button" onclick="austerityLanding.html" value="Continue to Site"/>
+   <form action="austerityImpact.html">
+     <input id="button" type="submit" value="Continue to Site"/>
+  </form>
 </div>
 
 
