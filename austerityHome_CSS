@@ -486,7 +486,16 @@ p2 {
   border: 1px;
   border-style: solid;
   border-color: black;
-  margin: 1em;
+  margin: 25px;
+  padding: 20px;
+}
+
+.writing2 {
+  border: 1px;
+  border-style: solid;
+  border-color: black;
+  margin: 25px;
+  padding: 20px;
 }
 
 h {
@@ -508,7 +517,19 @@ p {
   padding: 2px;
 }
 
+.Guto {
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  border: solid black 1px;
+  padding: 2px;
+}
 
+#sankey_multiple {
+  padding: 2px;
+  width: 400px;
+  height: 200px;
+}
 
 * {
   box-sizing: border-box;
@@ -667,4 +688,9 @@ font-family: 'ZCOOL XiaoWei', serif;
   .right {
     left: 0%;
   }
+}
+
+
+h9 {
+  font-size: .8em;
 }
