@@ -1,0 +1,92 @@
+library("twitteR")
+library("tidytext")
+library("dplyr")
+library("ggplot2")
+library("httr")
+library("ROAuth")
+library("stringr")
+library("httpuv")
+library("openssl")
+library("tm")
+library("maps")
+library("leaflet")
+library("ggmap")
+
+setup_twitter_oauth (consumer_key = '',
+                    consumer_secret = '',
+                    access_token = '',
+                    access_secret <- '')
+
+
+searchString <- ('')  
+numberOfTweets <- 1200
+tweets <- searchTwitter(searchString, n = numberOfTweets, lang="en")
+
+tweetsDF <- twListToDF(tweets)
+
+write.csv(tweetsDF, "C:\\Users\\aling\\Documents\\tweets.csv")
+
+read.csv("C:\\Users\\aling\\Documents\\tweets.csv", stringsAsFactors = FALSE)
+
+tweetsLocationDF <- NULL
+
+# loops through dataframe to find location for username
+userLocation <- for (row in 1:nrow(tweetsDF)) {
+  userName <- tweetsDF[row, "screenName"]
+  tweet <- tweetsDF[row,] %>%
+    select(screenName, text)
+  
+  userInfo <- getUser(userName)
+  print(userInfo$location)
+  location <- userInfo$toDataFrame() %>% select(location)
+  
+  combinedRow <- cbind(tweet, location)
+  
+  print(combinedRow)
+  
+  tweetsLocationDF <-rbind(combinedRow, tweetsLocationDF)
+}
+
+print(tweetsLocationDF)
+
+write.csv(tweetsLocationDF, "C:\\Users\\aling\\Documents\\tweetsLocation.csv")
+
+register_google(key="AIzaSyAAXAjOfb0UP10q_74XQHP522BSTdivv4c")
+
+workingTweets <- as.data.frame(read.csv("C:/Users/aling/Documents/tweetsLocationWorking.csv"), stringsAsFactors = FALSE)
+
+workingTweets$lat <- ""
+workingTweets$lon <- ""
+workingTweets$address <- ""
+
+for (i in 1:nrow(workingTweets)) {
+  
+  theTweet <- workingTweets[i,]
+  
+
+  result <- geocode(as.character(theTweet$location),
+                    api_key= 
+                      " ",
+                    output = "latlona",
+                    source="google")
+  print(result)
+  if(ncol(result) >= 3) {
+    theTweet <- theTweet %>% mutate(lon = as.numeric(result[1]), lat = as.numeric(result[2]), address = as.character(result[3]))
+    workingTweets[i, ] <- theTweet
+  }
+}
+
+write.csv(workingTweets, "C:/Users/aling/Documents/twitterLocationsWorking2.csv", row.names=FALSE)
+
+COYSgeo <- workingTweets %>% 
+  filter(lat != "") %>%
+  mutate(lon = as.numeric(lon), lat= as.numeric(lat))
+
+COYSmap <- COYSgeo %>% 
+  leaflet (options = 
+             leafletOptions(dragging = TRUE))%>%
+  addProviderTiles("CartoDB")%>%
+  addCircleMarkers(data=COYSgeo,
+                   lng = COYSgeo$lon,
+                   lat= COYSgeo$lat,
+                   radius = 4)
