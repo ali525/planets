@@ -25,6 +25,7 @@ names(trial.df) %>%
                  lng = ~Longitude,
                  lat=~Latitude,
                  group= df,
+                 label = ~`Crime type`,
                  clusterOptions = markerClusterOptions(removeOutsideVisibleBounds = F),
                  labelOptions = labelOptions(noHide = F,
                                              direction = "auto"))
