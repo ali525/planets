@@ -1,0 +1,38 @@
+library(tidyverse)
+library(leaflet)
+library(RColorBrewer)
+library(ggmap)
+library("lubridate")
+library(dplyr)
+library(purrr)
+library(shiny)
+library(ggplot2)
+library(reshape2)
+
+police <- as.data.frame(read_csv ("C:/Users/aling/Documents/Spring 2019/Data Vis/Data/workingArrests.csv"))
+
+trialDF <- select(police, -c('Reported by', 'Falls within', 'LSOA code', 'Location', 'LSOA name', 'Last outcome category', 'Month'))
+
+trial.df <- split(trialDF, trialDF$`Crime type`)
+
+l <- leaflet() %>%
+  addTiles()
+
+names(trial.df) %>%
+  purrr::walk(function(df) {
+    l <<- l %>%
+      addMarkers(data=trial.df[[df]],
+                 lng = ~Longitude,
+                 lat=~Latitude,
+                 group= df,
+                 clusterOptions = markerClusterOptions(removeOutsideVisibleBounds = F),
+                 labelOptions = labelOptions(noHide = F,
+                                             direction = "auto"))
+    
+  })
+
+l %>% 
+  addLayersControl(
+    overlayGroups = names(trial.df),
+    options = layersControlOptions(collapsed = FALSE)
+  )
